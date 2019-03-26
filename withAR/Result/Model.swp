@@ -1,0 +1,7 @@
+All of the upcoming parameter combinations will be skipped in the parameter sweep because they were already performed previously.
+The feature doesn't take into account potential changes in the result settings like Template Based Post Processing. It can be deactivated via Parameter Sweep...Options...
+--------------------------------------------------------------------------
+
+==========================================================================
+Total solver time: 0 hours, 0 min., 0 sec.
+==========================================================================

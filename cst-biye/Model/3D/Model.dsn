@@ -1,0 +1,184 @@
+*** File Version: 12.00
+
+Number of ports: 0
+Portnames:
+Modenumbers:
+Portlabels:
+StaticSources:
+ThermalSources:
+FloquetPortNames:
+FloquetPortModes:
+Number of frequency-points: 0
+Fmin: 5.000000e+010
+Fmax: 7.000000e+010
+Fscale: 1.000000e+009
+
+
+
+
+
+*** newmonitor
+monname: "farfield (f=50)"
+nmonfrequencies: 1
+monfrequencies: "50" 
+montype: 18
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "farfield (f=60)"
+nmonfrequencies: 1
+monfrequencies: "60" 
+montype: 18
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "farfield (f=70)"
+nmonfrequencies: 1
+monfrequencies: "70" 
+montype: 18
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "loss (f=70)"
+nmonfrequencies: 1
+monfrequencies: "70" 
+montype: 6
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "power (f=70)"
+nmonfrequencies: 1
+monfrequencies: "70" 
+montype: 2
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "h-field (f=70)"
+nmonfrequencies: 1
+monfrequencies: "70" 
+montype: 1
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "e-field (f=70)"
+nmonfrequencies: 1
+monfrequencies: "70" 
+montype: 0
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "loss (f=60)"
+nmonfrequencies: 1
+monfrequencies: "60" 
+montype: 6
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "power (f=60)"
+nmonfrequencies: 1
+monfrequencies: "60" 
+montype: 2
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "h-field (f=60)"
+nmonfrequencies: 1
+monfrequencies: "60" 
+montype: 1
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "e-field (f=60)"
+nmonfrequencies: 1
+monfrequencies: "60" 
+montype: 0
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "loss (f=50)"
+nmonfrequencies: 1
+monfrequencies: "50" 
+montype: 6
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "power (f=50)"
+nmonfrequencies: 1
+monfrequencies: "50" 
+montype: 2
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "h-field (f=50)"
+nmonfrequencies: 1
+monfrequencies: "50" 
+montype: 1
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
+*** newmonitor
+monname: "e-field (f=50)"
+nmonfrequencies: 1
+monfrequencies: "50" 
+montype: 0
+mondomain: 1
+mon_fmin: ""
+mon_fmax: ""
+mon_nfSteps: ""
+*** endmonitor
+
