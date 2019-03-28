@@ -1,11 +1,11 @@
 HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
-             2019 Mar 26 (Tue): 19:58:32
+             2019 Mar 27 (Wed): 20:10:21
              <<<<<<<<<<<<<<<<<<<<<<<<<<<
              
 HZW19144646: ===============================
              Processing CAD model
              Version 2015.0 (build 20150116)
-             2019 Mar 26 (Tue): 19:58:32
+             2019 Mar 27 (Wed): 20:10:21
              ===============================
              
 HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
@@ -33,17 +33,17 @@ HZW19144646: =======================
              =======================
              
 HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
-             2019 Mar 26 (Tue): 19:58:32
+             2019 Mar 27 (Wed): 20:10:21
              >>>>>>>>>>>>>>>>>>>>>>>>>>>
              
 HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
-             2019 Mar 26 (Tue): 19:58:33
+             2019 Mar 27 (Wed): 20:10:21
              <<<<<<<<<<<<<<<<<<<<<<<<<<<
              
 HZW19144646: ===============================
              Port preparation
              Version 2015.0 (build 20150116)
-             2019 Mar 26 (Tue): 19:58:33
+             2019 Mar 27 (Wed): 20:10:21
              ===============================
              
 HZW19144646: ==========================
@@ -51,11 +51,11 @@ HZW19144646: ==========================
              ==========================
              
 HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
-             2019 Mar 26 (Tue): 19:58:33
+             2019 Mar 27 (Wed): 20:10:21
              >>>>>>>>>>>>>>>>>>>>>>>>>>>
              
 HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
-             2019 Mar 26 (Tue): 19:58:33
+             2019 Mar 27 (Wed): 20:10:22
              <<<<<<<<<<<<<<<<<<<<<<<<<<<
              
 HZW19144646: ==============================
@@ -66,7 +66,7 @@ HZW19144646: =======================================
              Matrix computation (FPBA)
              	[FPBA accuracy enhancement is enabled]
              Version 2015.0 (build 20150116)
-             2019 Mar 26 (Tue): 19:58:33
+             2019 Mar 27 (Wed): 20:10:22
              =======================================
              
 HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
@@ -87,11 +87,11 @@ HZW19144646: ==================================
              ==================================
              
 HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
-             2019 Mar 26 (Tue): 19:58:34
+             2019 Mar 27 (Wed): 20:10:22
              >>>>>>>>>>>>>>>>>>>>>>>>>>>
              
 HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
-             2019 Mar 26 (Tue): 19:58:34
+             2019 Mar 27 (Wed): 20:10:23
              <<<<<<<<<<<<<<<<<<<<<<<<<<<
              
 HZW19144646: ==============================
@@ -102,7 +102,79 @@ HZW19144646: =======================================
              Matrix computation (FPBA)
              	[FPBA accuracy enhancement is enabled]
              Version 2015.0 (build 20150116)
-             2019 Mar 26 (Tue): 19:58:34
+             2019 Mar 27 (Wed): 20:10:23
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ----------------------------------------------------------------------------
+             Shape "component1:withAR__1_1" overlaps with shape "component1:solid1__1_0".
+             Using shape "component1:withAR__1_1" within overlapping areas.
+             ----------------------------------------------------------------------------
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 20:10:24
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 20:10:25
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 20:10:25
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ----------------------------------------------------------------------------
+             Shape "component1:withAR__1_1" overlaps with shape "component1:solid1__1_0".
+             Using shape "component1:withAR__1_1" within overlapping areas.
+             ----------------------------------------------------------------------------
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 20:10:26
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 20:10:27
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 20:10:27
              =======================================
              
 HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
@@ -123,11 +195,83 @@ HZW19144646: ==================================
              ==================================
              
 HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
-             2019 Mar 26 (Tue): 19:58:35
+             2019 Mar 27 (Wed): 20:10:27
              >>>>>>>>>>>>>>>>>>>>>>>>>>>
              
 HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
-             2019 Mar 26 (Tue): 19:58:36
+             2019 Mar 27 (Wed): 20:10:28
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 20:10:29
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: --------------------------------------------------------------------------
+             Shape "component1:withAR__2_1" overlaps with shape "component1:hole__2_0".
+             Using shape "component1:withAR__2_1" within overlapping areas.
+             --------------------------------------------------------------------------
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 20:10:29
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 20:10:30
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 20:10:30
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: --------------------------------------------------------------------------
+             Shape "component1:withAR__2_1" overlaps with shape "component1:hole__2_0".
+             Using shape "component1:withAR__2_1" within overlapping areas.
+             --------------------------------------------------------------------------
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 20:10:31
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 20:10:32
              <<<<<<<<<<<<<<<<<<<<<<<<<<<
              
 HZW19144646: ======================
@@ -137,7 +281,7 @@ HZW19144646: ======================
 HZW19144646: ===============================
              Processing CAD model
              Version 2015.0 (build 20150116)
-             2019 Mar 26 (Tue): 19:58:36
+             2019 Mar 27 (Wed): 20:10:33
              ===============================
              
 HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
@@ -153,14 +297,14 @@ HZW19144646: =======================
              =======================
              
 HZW19144646: 1xN000: <<<<<<<<<<<<<<<<<<<<<<<<<<<
-                     2019 Mar 26 (Tue): 19:58:36
+                     2019 Mar 27 (Wed): 20:10:33
                      <<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 HZW19144646: 1xN000: =======================================
                      Matrix computation (FPBA)
                      	[FPBA accuracy enhancement is enabled]
                      Version 2015.0 (build 20150116)
-                     2019 Mar 26 (Tue): 19:58:36
+                     2019 Mar 27 (Wed): 20:10:33
                      =======================================
 
 HZW19144646: 1xN000: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
@@ -186,12 +330,12 @@ HZW19144646: 1xN000: ==================================
                      ==================================
 
 HZW19144646: 1xN000: >>>>>>>>>>>>>>>>>>>>>>>>>>>
-                     2019 Mar 26 (Tue): 19:58:38
+                     2019 Mar 27 (Wed): 20:10:33
                      >>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 
 HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
-             2019 Mar 26 (Tue): 19:58:38
+             2019 Mar 27 (Wed): 20:10:34
              >>>>>>>>>>>>>>>>>>>>>>>>>>>
              

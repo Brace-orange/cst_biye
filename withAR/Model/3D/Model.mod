@@ -229,7 +229,6 @@ With Brick
      .Create
 End With
 
-
 '@ define material: hole
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
@@ -311,7 +310,6 @@ With Brick
      .Create
 End With
 
-
 '@ transform: translate component1:hole
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
@@ -348,7 +346,6 @@ With Brick
      .Zrange "length-0.95", "length" 
      .Create
 End With
-
 
 '@ pick face
 
@@ -467,8 +464,7 @@ Solid.FastModelUpdate "False"
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With ParameterSweep
     .SetSimulationType "Transient" 
-End With 
-
+End With
 
 '@ add parsweep sequence: Sequence 1
 
@@ -477,12 +473,207 @@ With ParameterSweep
      .AddSequence "Sequence 1" 
 End With
 
-
 '@ add parsweep parameter: Sequence 1:length
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With ParameterSweep
      .AddParameter_Samples "Sequence 1", "length", "1", "13", "6", "False" 
+End With
+
+'@ edit parsweep parameter: Sequence 1:length
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .DeleteParameter "Sequence 1", "length" 
+     .AddParameter_Samples "Sequence 1", "length", "1", "13", "6", "False" 
+End With
+
+'@ delete parsweep parameter: Sequence 1:length
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .DeleteParameter "Sequence 1", "length" 
+End With
+
+'@ add parsweep sequence: Sequence 2
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .AddSequence "Sequence 2" 
+End With
+
+'@ add parsweep parameter: Sequence 2:length
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .AddParameter_Samples "Sequence 2", "length", "1", "13", "6", "False" 
+End With
+
+'@ set parsweep options
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .ResetOptions
+     .SetOptionResetParameterValuesAfterRun "False" 
+     .SetOptionSkipExistingCombinations "False" 
+     .SaveOptions
+End With
+
+'@ edit parsweep parameter: Sequence 2:length
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .DeleteParameter "Sequence 2", "length" 
+     .AddParameter_Stepwidth "Sequence 2", "length", "1", "13", "1" 
+End With
+
+'@ define boundaries
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Boundary
+     .Xmin "electric" 
+     .Xmax "electric" 
+     .Ymin "magnetic" 
+     .Ymax "magnetic" 
+     .Zmin "open" 
+     .Zmax "open" 
+     .Xsymmetry "none" 
+     .Ysymmetry "none" 
+     .Zsymmetry "none" 
+     .XminThermal "isothermal" 
+     .XmaxThermal "isothermal" 
+     .YminThermal "isothermal" 
+     .YmaxThermal "isothermal" 
+     .ZminThermal "isothermal" 
+     .ZmaxThermal "isothermal" 
+     .XsymmetryThermal "none" 
+     .YsymmetryThermal "none" 
+     .ZsymmetryThermal "none" 
+     .ApplyInAllDirections "False" 
+     .ApplyInAllDirectionsThermal "False" 
+     .XminTemperature "" 
+     .XminTemperatureType "None" 
+     .XmaxTemperature "" 
+     .XmaxTemperatureType "None" 
+     .YminTemperature "" 
+     .YminTemperatureType "None" 
+     .YmaxTemperature "" 
+     .YmaxTemperatureType "None" 
+     .ZminTemperature "" 
+     .ZminTemperatureType "None" 
+     .ZmaxTemperature "" 
+     .ZmaxTemperatureType "None" 
+End With
+
+
+'@ add parsweep parameter: Sequence 1:length
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .AddParameter_Stepwidth "Sequence 1", "length", "1", "13", "0.3" 
+End With
+
+
+'@ edit parsweep parameter: Sequence 1:length
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .DeleteParameter "Sequence 1", "length" 
+     .AddParameter_Stepwidth "Sequence 1", "length", "1", "13", "0.5" 
+End With
+
+
+'@ define boundaries
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Boundary
+     .Xmin "electric" 
+     .Xmax "electric" 
+     .Ymin "magnetic" 
+     .Ymax "magnetic" 
+     .Zmin "expanded open" 
+     .Zmax "expanded open" 
+     .Xsymmetry "none" 
+     .Ysymmetry "none" 
+     .Zsymmetry "none" 
+     .XminThermal "isothermal" 
+     .XmaxThermal "isothermal" 
+     .YminThermal "isothermal" 
+     .YmaxThermal "isothermal" 
+     .ZminThermal "isothermal" 
+     .ZmaxThermal "isothermal" 
+     .XsymmetryThermal "none" 
+     .YsymmetryThermal "none" 
+     .ZsymmetryThermal "none" 
+     .ApplyInAllDirections "False" 
+     .ApplyInAllDirectionsThermal "False" 
+     .XminTemperature "" 
+     .XminTemperatureType "None" 
+     .XmaxTemperature "" 
+     .XmaxTemperatureType "None" 
+     .YminTemperature "" 
+     .YminTemperatureType "None" 
+     .YmaxTemperature "" 
+     .YmaxTemperatureType "None" 
+     .ZminTemperature "" 
+     .ZminTemperatureType "None" 
+     .ZmaxTemperature "" 
+     .ZmaxTemperatureType "None" 
+End With
+
+
+'@ delete parsweep parameter: Sequence 1:length
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .DeleteParameter "Sequence 1", "length" 
+End With
+
+
+'@ define boundaries
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Boundary
+     .Xmin "electric" 
+     .Xmax "electric" 
+     .Ymin "magnetic" 
+     .Ymax "magnetic" 
+     .Zmin "open" 
+     .Zmax "open" 
+     .Xsymmetry "none" 
+     .Ysymmetry "none" 
+     .Zsymmetry "none" 
+     .XminThermal "isothermal" 
+     .XmaxThermal "isothermal" 
+     .YminThermal "isothermal" 
+     .YmaxThermal "isothermal" 
+     .ZminThermal "isothermal" 
+     .ZmaxThermal "isothermal" 
+     .XsymmetryThermal "none" 
+     .YsymmetryThermal "none" 
+     .ZsymmetryThermal "none" 
+     .ApplyInAllDirections "False" 
+     .ApplyInAllDirectionsThermal "False" 
+     .XminTemperature "" 
+     .XminTemperatureType "None" 
+     .XmaxTemperature "" 
+     .XmaxTemperatureType "None" 
+     .YminTemperature "" 
+     .YminTemperatureType "None" 
+     .YmaxTemperature "" 
+     .YmaxTemperatureType "None" 
+     .ZminTemperature "" 
+     .ZminTemperatureType "None" 
+     .ZmaxTemperature "" 
+     .ZmaxTemperatureType "None" 
+End With
+
+
+'@ add parsweep sequence: Sequence 3
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .AddSequence "Sequence 3" 
 End With
 
 

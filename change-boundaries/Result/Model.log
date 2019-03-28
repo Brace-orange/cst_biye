@@ -1,0 +1,290 @@
+Defined reference frequency for open boundary condition (60 GHz) is larger than
+the lowest relevant system frequency (monitor at 50 GHz).
+Please check open boundary settings to ensure accurate monitor results for the
+lowest frequency of interest.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Multiple closed boundaries detected.These boundaries are ignored by the
+farfield calculation.Please note that the farfield might be misleading.
+
+--------------------------------------------------------------------------------
+Build version: 2015.0 Release from 2015-01-16 (change 344899)
+
+Starting adaptive port meshing.
+
+--------------------------------------------------------------------------------
+Mode calculation for port 1:
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Number of mesh faces filled with PEC due to fill limit restrictions: 0
+
+--------------------------------------------------------------------------------
+  -------------------------------- F-Calc 60 ---------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TEM         377           6.75e-006     377           0.0
+  ----------------------------------------------------------------------------
+
+*** Warning ***
+
+Some higher order propagating modes at port 1 are not considered in time domain
+calculation. This possibly leads to an inaccurate energy balance. Consider to
+increase the number of modes or decrease the upper frequency limit. More...
+
+--------------------------------------------------------------------------------
+Pass 1 successfully completed. 
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Number of mesh faces filled with PEC due to fill limit restrictions: 0
+
+--------------------------------------------------------------------------------
+  -------------------------------- F-Calc 60 ---------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TEM         377           6.38e-006     377           0.0
+  ----------------------------------------------------------------------------
+
+Pass 2 successfully completed. Delta (Line Imp.): 0.000000%
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Number of mesh faces filled with PEC due to fill limit restrictions: 0
+
+--------------------------------------------------------------------------------
+  -------------------------------- F-Calc 60 ---------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TEM         377           7.63e-006     377           0.0
+  ----------------------------------------------------------------------------
+
+Pass 3 successfully completed. Delta (Line Imp.): 0.000000%
+Mode calculation for port 2:
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Number of mesh faces filled with PEC due to fill limit restrictions: 0
+
+--------------------------------------------------------------------------------
+  -------------------------------- F-Calc 60 ---------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      TEM         377           6.75e-006     377           0.0
+  ----------------------------------------------------------------------------
+
+*** Warning ***
+
+Some higher order propagating modes at port 2 are not considered in time domain
+calculation. This possibly leads to an inaccurate energy balance. Consider to
+increase the number of modes or decrease the upper frequency limit. More...
+
+--------------------------------------------------------------------------------
+Pass 1 successfully completed. 
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Number of mesh faces filled with PEC due to fill limit restrictions: 0
+
+--------------------------------------------------------------------------------
+  -------------------------------- F-Calc 60 ---------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      TEM         377           6.38e-006     377           0.0
+  ----------------------------------------------------------------------------
+
+Pass 2 successfully completed. Delta (Line Imp.): 0.000000%
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Number of mesh faces filled with PEC due to fill limit restrictions: 0
+
+--------------------------------------------------------------------------------
+  -------------------------------- F-Calc 60 ---------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      TEM         377           7.63e-006     377           0.0
+  ----------------------------------------------------------------------------
+
+Pass 3 successfully completed. Delta (Line Imp.): 0.000000%
+Adaptive port meshing finished. 
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Multiple closed boundaries detected.These boundaries are ignored by the
+farfield calculation.Please note that the farfield might be misleading.
+
+--------------------------------------------------------------------------------
+
+Solver started at: 04:07 PM Wednesday, 27. March 2019
+
+  Module:  Time Domain: S-Parameter (Win 64)
+  Version: 2015.0 Release from 2015-01-16 (change 344899)
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 1
+======================================================================
+
+Stimulation at port 1 (mode 1) 
+
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+Number of mesh faces filled with PEC due to fill limit restrictions: 0
+
+--------------------------------------------------------------------------------
+Mesh statistics:
+
+   Hexahedral mesh type: FPBA [accuracy enhancement is enabled]
+
+   Parallelization type: domain decomposition
+      Number of parallel working threads: 1
+      Number of calculation domains used: 1
+
+   !  Some shapes of the CAD model overlap each other. For a detailed
+   information please see the "MCalc.log" file in the "Results" folder
+
+
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: electric
+  Xmax: electric
+
+  Ymin: magnetic
+  Ymax: magnetic
+
+  Zmin: expanded open, 4 Layer, depth 1.66551 mm
+  Zmax: expanded open, 4 Layer, depth 1.66551 mm
+
+  PML-Type: Convolution PML
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:    50
+  Fmax:    70
+  Nfsteps: 1001
+
+--------------------------------------------------------------------------------
+Waveguide boundaries:
+
+Port: 1
+
+  -------------------------------- F-Calc 60 ---------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TEM         377           6.75e-006     377           0.0
+  ----------------------------------------------------------------------------
+
+Port: 2
+
+  -------------------------------- F-Calc 60 ---------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      TEM         377           6.75e-006     377           0.0
+  ----------------------------------------------------------------------------
+
+*** Warning ***
+
+Some higher order propagating modes at port 1 are not considered in time domain
+calculation. This possibly leads to an inaccurate energy balance. Consider to
+increase the number of modes or decrease the upper frequency limit. More...
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Some higher order propagating modes at port 2 are not considered in time domain
+calculation. This possibly leads to an inaccurate energy balance. Consider to
+increase the number of modes or decrease the upper frequency limit. More...
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	55739
+  Number of disp. elements:		25805
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Steady state energy criterion met, solver finished successfully.
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  Matrices calc.      38008                         6739504      6552084      
+  Solver run total    51416                         6657092      6613936      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	HZW19144646 
+
+     Number of CPU threads:             4
+     hardware info:                  	hardware acceleration not activated
+
+  Number of mesh cells:             	8496
+  Excitation duration:              	3.55454875e-001 ns 
+  Calculation time for excitation:  	1      	s
+  Number of calculated pulse widths:	1.21007 
+  Steady state accuracy limit:      	-30	dB 
+  Simulated number of time steps:   	1230   
+  Maximum number of time steps:     	20329  
+  Time step width:
+     without subcycles:             	3.49695455e-004 ns
+     used:                          	3.49695455e-004 ns
+
+  Matrix calculation time:          	5      	s
+  Solver setup time:                	1      	s
+  Solver loop time:                 	2      	s
+  Solver post processing time:      	1      	s
+                                    	------------
+  Total solver time:                	9      	s
+
+--------------------------------------------------------------------------------
+
+  Adaptive port meshing time:       	12     	s
+  Total solver time (all cycles):   	9      	s
+                                    	------------
+  Total simulation time:            	21     	s
+
+--------------------------------------------------------------------------------
+Solver finished at: 04:07 PM Wednesday, 27. March 2019
+
+
+--------------------------------------------------------------------------------
+Creating parametric 1D results.
+
+--------------------------------------------------------------------------------

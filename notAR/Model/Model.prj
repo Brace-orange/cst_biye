@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+Administrator
+[Mesh Cells]
+5,800
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Time Domain
+[Last Solver Type Abb]
+t
+[Results]
+Time Domain: S-Parameter
+[Modeler Unique ID]
+5:notar.cst?f6c4596791591fd2ab5176025ee82b3b?11411:numberofparameters=1:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::length
+[Comment]

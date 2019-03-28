@@ -1,0 +1,341 @@
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 19:43:22
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ===============================
+             Processing CAD model
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 19:43:23
+             ===============================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+==================================================================================================
+== CST Matrix Calculation Priority Log                                                          ==
+==================================================================================================
+ 
+Priorities are sorted in ascending order beginning with the lowest priority
+ 
+Priority:   2, shape   1: component1:hole, material: hole
+Priority:   2, shape   2: component1:solid1, material: hole
+Priority:   2, shape   3: component1:withAR, material: material1
+ 
+==================================================================================================
+ 
+HZW19144646: =======================
+             Finished CAD processing
+             =======================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 19:43:23
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 19:43:23
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ===============================
+             Port preparation
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 19:43:23
+             ===============================
+             
+HZW19144646: ==========================
+             Finished port preparation.
+             ==========================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 19:43:23
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 19:43:24
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 19:43:24
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ----------------------------------------------------------------------------
+             Shape "component1:withAR__1_1" overlaps with shape "component1:solid1__1_0".
+             Using shape "component1:withAR__1_1" within overlapping areas.
+             ----------------------------------------------------------------------------
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 19:43:24
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 19:43:26
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 19:43:26
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ----------------------------------------------------------------------------
+             Shape "component1:withAR__1_1" overlaps with shape "component1:solid1__1_0".
+             Using shape "component1:withAR__1_1" within overlapping areas.
+             ----------------------------------------------------------------------------
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 19:43:26
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 19:43:28
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 19:43:28
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ----------------------------------------------------------------------------
+             Shape "component1:withAR__1_1" overlaps with shape "component1:solid1__1_0".
+             Using shape "component1:withAR__1_1" within overlapping areas.
+             ----------------------------------------------------------------------------
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 19:43:29
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 19:43:30
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 19:43:31
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: --------------------------------------------------------------------------
+             Shape "component1:withAR__2_1" overlaps with shape "component1:hole__2_0".
+             Using shape "component1:withAR__2_1" within overlapping areas.
+             --------------------------------------------------------------------------
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 19:43:31
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 19:43:32
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 19:43:32
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: --------------------------------------------------------------------------
+             Shape "component1:withAR__2_1" overlaps with shape "component1:hole__2_0".
+             Using shape "component1:withAR__2_1" within overlapping areas.
+             --------------------------------------------------------------------------
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 19:43:33
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 19:43:34
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 19:43:34
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: --------------------------------------------------------------------------
+             Shape "component1:withAR__2_1" overlaps with shape "component1:hole__2_0".
+             Using shape "component1:withAR__2_1" within overlapping areas.
+             --------------------------------------------------------------------------
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 19:43:35
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 19:43:37
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ======================
+             Mesher selection: FPBA
+             ======================
+             
+HZW19144646: ===============================
+             Processing CAD model
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 19:43:37
+             ===============================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: =======================
+             Finished CAD processing
+             =======================
+             
+HZW19144646: 1xN000: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+                     2019 Mar 27 (Wed): 19:43:37
+                     <<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+HZW19144646: 1xN000: =======================================
+                     Matrix computation (FPBA)
+                     	[FPBA accuracy enhancement is enabled]
+                     Version 2015.0 (build 20150116)
+                     2019 Mar 27 (Wed): 19:43:37
+                     =======================================
+
+HZW19144646: 1xN000: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                     The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+                     sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+
+HZW19144646: 1xN000: ssssssssssssssssssssssssssssssssssss
+                     The point accuracy is set to 75.00%.
+                     ssssssssssssssssssssssssssssssssssss
+
+HZW19144646: 1xN000: ----------------------------------------------------------------
+                     Shape "component1:withAR" overlaps with shape "component1:hole".
+                     Using shape "component1:withAR" within overlapping areas.
+                     ----------------------------------------------------------------
+
+HZW19144646: 1xN000: ------------------------------------------------------------------
+                     Shape "component1:withAR" overlaps with shape "component1:solid1".
+                     Using shape "component1:withAR" within overlapping areas.
+                     ------------------------------------------------------------------
+
+HZW19144646: 1xN000: ==================================
+                     Finished matrix computation (FPBA)
+                     ==================================
+
+HZW19144646: 1xN000: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+                     2019 Mar 27 (Wed): 19:43:39
+                     >>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 19:43:39
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             

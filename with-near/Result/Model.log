@@ -1,0 +1,17 @@
+Defined reference frequency for open boundary condition (60 GHz) is larger than
+the lowest relevant system frequency (monitor at 50 GHz).
+Please check open boundary settings to ensure accurate monitor results for the
+lowest frequency of interest.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Multiple closed boundaries detected.These boundaries are ignored by the
+farfield calculation.Please note that the farfield might be misleading.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Solver run aborted by user.
+
+--------------------------------------------------------------------------------

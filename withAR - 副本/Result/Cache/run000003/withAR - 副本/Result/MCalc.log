@@ -1,0 +1,299 @@
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 16:13:30
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ===============================
+             Processing CAD model
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 16:13:30
+             ===============================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+==================================================================================================
+== CST Matrix Calculation Priority Log                                                          ==
+==================================================================================================
+ 
+Priorities are sorted in ascending order beginning with the lowest priority
+ 
+Priority:   2, shape   1: component1:withAR, material: material1
+ 
+==================================================================================================
+ 
+HZW19144646: =======================
+             Finished CAD processing
+             =======================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 16:13:30
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 16:13:30
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ===============================
+             Port preparation
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 16:13:31
+             ===============================
+             
+HZW19144646: ==========================
+             Finished port preparation.
+             ==========================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 16:13:31
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 16:13:31
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 16:13:31
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 16:13:31
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 16:13:33
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 16:13:33
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 16:13:34
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 16:13:35
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 16:13:35
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 16:13:36
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 16:13:37
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 16:13:37
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 16:13:38
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 16:13:39
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 16:13:39
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 16:13:39
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 16:13:41
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ==============================
+             Mesher selection: manual: FPBA
+             ==============================
+             
+HZW19144646: =======================================
+             Matrix computation (FPBA)
+             	[FPBA accuracy enhancement is enabled]
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 16:13:41
+             =======================================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ==================================
+             Finished matrix computation (FPBA)
+             ==================================
+             
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 16:13:42
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             
+HZW19144646: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             2019 Mar 27 (Wed): 16:13:43
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<
+             
+HZW19144646: ======================
+             Mesher selection: FPBA
+             ======================
+             
+HZW19144646: ===============================
+             Processing CAD model
+             Version 2015.0 (build 20150116)
+             2019 Mar 27 (Wed): 16:13:43
+             ===============================
+             
+HZW19144646: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+             sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: ssssssssssssssssssssssssssssssssssss
+             The point accuracy is set to 75.00%.
+             ssssssssssssssssssssssssssssssssssss
+             
+HZW19144646: =======================
+             Finished CAD processing
+             =======================
+             
+HZW19144646: 1xN000: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+                     2019 Mar 27 (Wed): 16:13:44
+                     <<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+HZW19144646: 1xN000: =======================================
+                     Matrix computation (FPBA)
+                     	[FPBA accuracy enhancement is enabled]
+                     Version 2015.0 (build 20150116)
+                     2019 Mar 27 (Wed): 16:13:44
+                     =======================================
+
+HZW19144646: 1xN000: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                     The point accuracy has been changed from 0.00% to 75.00% after complexity analysis.
+                     sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+
+HZW19144646: 1xN000: ssssssssssssssssssssssssssssssssssss
+                     The point accuracy is set to 75.00%.
+                     ssssssssssssssssssssssssssssssssssss
+
+HZW19144646: 1xN000: ==================================
+                     Finished matrix computation (FPBA)
+                     ==================================
+
+HZW19144646: 1xN000: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+                     2019 Mar 27 (Wed): 16:13:44
+                     >>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+HZW19144646: >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             2019 Mar 27 (Wed): 16:13:45
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>
+             

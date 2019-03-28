@@ -1,0 +1,266 @@
+Defined reference frequency for open boundary condition (60 GHz) is larger than
+the lowest relevant system frequency (monitor at 50 GHz).
+Please check open boundary settings to ensure accurate monitor results for the
+lowest frequency of interest.
+
+--------------------------------------------------------------------------------
+Build version: 2015.0 Release from 2015-01-16 (change 344899)
+
+Starting adaptive port meshing.
+
+--------------------------------------------------------------------------------
+Mode calculation for port 1:
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Number of mesh faces filled with PEC due to fill limit restrictions: 0
+
+--------------------------------------------------------------------------------
+Port mode solver: Detected dispersive material(s) at port 1. 
+Using a constant approximation of dispersive material(s) at 60GHz and
+neglecting loss terms. 
+
+--------------------------------------------------------------------------------
+  -------------------------------- F-Calc 60 ---------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TM          177           0.0863        ---           36.8
+  ----------------------------------------------------------------------------
+
+*** Warning ***
+
+At least one propagating mode at port 1 is not considered in the time domain
+calculation! (At least one mode shares the same beta with considered mode(s) ->
+degeneration).It might be better to increase the number of modes at port 1.
+More...
+
+--------------------------------------------------------------------------------
+Pass 1 successfully completed. 
+Mode calculation for port 2:
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Number of mesh faces filled with PEC due to fill limit restrictions: 0
+
+--------------------------------------------------------------------------------
+Port mode solver: Detected dispersive material(s) at port 2. 
+Using a constant approximation of dispersive material(s) at 60GHz and
+neglecting loss terms. 
+
+--------------------------------------------------------------------------------
+  -------------------------------- F-Calc 60 ---------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      TM          177           0.0863        ---           36.8
+  ----------------------------------------------------------------------------
+
+*** Warning ***
+
+At least one propagating mode at port 2 is not considered in the time domain
+calculation! (At least one mode shares the same beta with considered mode(s) ->
+degeneration).It might be better to increase the number of modes at port 2.
+More...
+
+--------------------------------------------------------------------------------
+Pass 1 successfully completed. 
+Adaptive port meshing finished. 
+
+--------------------------------------------------------------------------------
+
+Solver started at: 11:22 AM Wednesday, 27. March 2019
+
+  Module:  Time Domain: S-Parameter (Win 64)
+  Version: 2015.0 Release from 2015-01-16 (change 344899)
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 1
+======================================================================
+
+Stimulation at port 1 (mode 1) 
+
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+Number of mesh faces filled with PEC due to fill limit restrictions: 0
+
+--------------------------------------------------------------------------------
+Mesh statistics:
+
+   Hexahedral mesh type: FPBA [accuracy enhancement is enabled]
+
+   Parallelization type: domain decomposition
+      Number of parallel working threads: 1
+      Number of calculation domains used: 1
+
+   !  Some shapes of the CAD model overlap each other. For a detailed
+   information please see the "MCalc.log" file in the "Results" folder
+
+
+
+--------------------------------------------------------------------------------
+Port mode solver: Detected dispersive material(s) at port 1, 2. 
+Using a constant approximation of dispersive material(s) at 60GHz and
+neglecting loss terms. 
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: expanded open, 4 Layer, depth 1.66551 mm
+  Xmax: expanded open, 4 Layer, depth 1.66551 mm
+
+  Ymin: expanded open, 4 Layer, depth 1.66551 mm
+  Ymax: expanded open, 4 Layer, depth 1.66551 mm
+
+  Zmin: expanded open, 4 Layer, depth 1.66551 mm
+  Zmax: expanded open, 4 Layer, depth 1.66551 mm
+
+  PML-Type: Convolution PML
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:    50
+  Fmax:    70
+  Nfsteps: 1001
+
+--------------------------------------------------------------------------------
+Waveguide boundaries:
+
+Port: 1
+
+  -------------------------------- F-Calc 60 ---------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      UNDEF       181           0.188         ---           ---
+  ----------------------------------------------------------------------------
+
+  Using first order filter.
+
+--------------------------------------------------------------------------------
+  Using first order filter.
+
+--------------------------------------------------------------------------------
+Port: 2
+
+  -------------------------------- F-Calc 60 ---------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      UNDEF       181           0.188         ---           ---
+  ----------------------------------------------------------------------------
+
+  Using first order filter.
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+At least one propagating mode at port 1 is not considered in the time domain
+calculation! (At least one mode shares the same beta with considered mode(s) ->
+degeneration).It might be better to increase the number of modes at port 1.
+More...
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The first mode at inhomogeneous port 1 is hybrid. This could lead to an
+inaccurate energy balance. Please check your structure. More...
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+At least one propagating mode at port 2 is not considered in the time domain
+calculation! (At least one mode shares the same beta with considered mode(s) ->
+degeneration).It might be better to increase the number of modes at port 2.
+More...
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The first mode at inhomogeneous port 2 is hybrid. This could lead to an
+inaccurate energy balance. Please check your structure. More...
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	122135
+  Number of disp. elements:		25181
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Steady state energy criterion met, solver finished successfully.
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  Matrices calc.      46456                         8008268      7948404      
+  Solver run total    91828                         8081492      7985488      
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	HZW19144646 
+
+     Number of CPU threads:             4
+     hardware info:                  	hardware acceleration not activated
+
+  Number of mesh cells:             	19116
+  Excitation duration:              	3.55454875e-001 ns 
+  Calculation time for excitation:  	1      	s
+  Number of calculated pulse widths:	1.03258 
+  Steady state accuracy limit:      	-30	dB 
+  Simulated number of time steps:   	938    
+  Maximum number of time steps:     	18168  
+  Time step width:
+     without subcycles:             	3.91297233e-004 ns
+     used:                          	3.91297233e-004 ns
+
+  Matrix calculation time:          	3      	s
+  Solver setup time:                	1      	s
+  Solver loop time:                 	1      	s
+  Solver post processing time:      	1      	s
+                                    	------------
+  Total solver time:                	6      	s
+
+--------------------------------------------------------------------------------
+
+  Adaptive port meshing time:       	5      	s
+  Total solver time (all cycles):   	7      	s
+                                    	------------
+  Total simulation time:            	12     	s
+
+--------------------------------------------------------------------------------
+Solver finished at: 11:22 AM Wednesday, 27. March 2019
+
+
+--------------------------------------------------------------------------------
+Creating parametric 1D results.
+
+--------------------------------------------------------------------------------

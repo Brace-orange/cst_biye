@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaGeometryFile creator="MatrixCalc" version="20140129">
+  <Components>
+    <Component name="component1:hole">
+      <Shape name="Components\component1:hole" id="1" visible="1" material="hole">
+        <MeshGroup3D list=""/>
+        <Face>
+          <MeshGroup0D list=""/>
+          <MeshGroup1D list=""/>
+          <MeshGroup2D>
+            <Pos list="1 2 3 4 5 6"/>
+            <Neg list=""/>
+            <DS list=""/>
+          </MeshGroup2D>
+        </Face>
+      </Shape>
+    </Component>
+    <Component name="component1:solid1">
+      <Shape name="Components\component1:solid1" id="2" visible="1" material="hole">
+        <MeshGroup3D list=""/>
+        <Face>
+          <MeshGroup0D list=""/>
+          <MeshGroup1D list=""/>
+          <MeshGroup2D>
+            <Pos list="7 8 9 10 11 12"/>
+            <Neg list=""/>
+            <DS list=""/>
+          </MeshGroup2D>
+        </Face>
+      </Shape>
+    </Component>
+    <Component name="component1:withAR">
+      <Shape name="Components\component1:withAR" id="3" visible="1" material="material1">
+        <MeshGroup3D list=""/>
+        <Face>
+          <MeshGroup0D list=""/>
+          <MeshGroup1D list=""/>
+          <MeshGroup2D>
+            <Pos list="13 14 15 16 17 18"/>
+            <Neg list=""/>
+            <DS list=""/>
+          </MeshGroup2D>
+        </Face>
+      </Shape>
+    </Component>
+  </Components>
+  <SimulationDomain min="0 0 0" max="2.5 2.5 13"/>
+  <Materials>
+    <Material name="air_0" priority="1">
+      <Color value="1 1 1"/>
+      <Transparency value="0"/>
+      <Wireframe value="0"/>
+      <Reflective value="1"/>
+      <Outline value="1"/>
+      <OutlineIfTransparent value="0"/>
+    </Material>
+    <Material name="hole" priority="1">
+      <Color value="1 1 1"/>
+      <Transparency value="0"/>
+      <Wireframe value="0"/>
+      <Reflective value="1"/>
+      <Outline value="1"/>
+      <OutlineIfTransparent value="0"/>
+    </Material>
+    <Material name="material1" priority="1">
+      <Color value="1 1 1"/>
+      <Transparency value="0"/>
+      <Wireframe value="0"/>
+      <Reflective value="1"/>
+      <Outline value="1"/>
+      <OutlineIfTransparent value="0"/>
+    </Material>
+  </Materials>
+  <GeometryFile filename="3d.slm" type="slim"/>
+  <MeshType type="HEX"/>
+  <HexMesh>
+    <Dimensions nx="13" ny="13" nz="54"/>
+    <MeshPlanesX values="0 0.15 0.3 0.525 0.75 0.975 1.2 1.425 1.65 1.875 2.1 2.3 2.5"/>
+    <MeshPlanesY values="0 0.15 0.3 0.525 0.75 0.975 1.2 1.425 1.65 1.875 2.1 2.3 2.5"/>
+    <MeshPlanesZ values="0 0.2375 0.475 0.7125 0.95 1.196666666667 1.443333333333 1.69 1.936666666667 2.183333333333 2.43 2.676666666667 2.923333333333 3.17 3.416666666667 3.663333333333 3.91 4.156666666667 4.403333333333 4.65 4.896666666667 5.143333333333 5.39 5.636666666667 5.883333333333 6.13 6.376666666667 6.623333333333 6.87 7.116666666667 7.363333333333 7.61 7.856666666667 8.103333333333 8.35 8.596666666667 8.843333333333 9.09 9.336666666667 9.583333333333 9.83 10.07666666667 10.32333333333 10.57 10.81666666667 11.06333333333 11.31 11.55666666667 11.80333333333 12.05 12.2875 12.525 12.7625 13"/>
+  </HexMesh>
+</MetaGeometryFile>

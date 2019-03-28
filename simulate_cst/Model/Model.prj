@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+Administrator
+[Mesh Cells]
+
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Time Domain
+[Last Solver Type Abb]
+t
+[Results]
+Unavailable
+[Modeler Unique ID]
+5:simulate_cst.cst?e35d8a62ed673309c3c58b85af363176?10380:numberofparameters=1:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::length
+[Comment]

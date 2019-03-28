@@ -1,0 +1,46 @@
+7
+0
+0
+6
+S1,1dB
+S-Parameter
+1
+1D
+S-Parameters
+1
+S1,1dB
+S2,1dB
+S-Parameter
+1
+1D
+S-Parameters
+1
+S2,1dB
+S1,1dB_0D_yAtX
+0D or 1D Result from 1D Result (Rescale, Derivation, etc)
+1
+0D
+General 1D
+1
+S1,1dB_0D_yAtX
+S2,1dB_0D_yAtX
+0D or 1D Result from 1D Result (Rescale, Derivation, etc)
+1
+0D
+General 1D
+1
+S2,1dB_0D_yAtX
+S2,1_0D_yAtX
+0D or 1D Result from 1D Result (Rescale, Derivation, etc)
+1
+0D
+General 1D
+1
+S2,1_0D_yAtX
+S1,1dB_0D_yAtX_1
+0D or 1D Result from 1D Result (Rescale, Derivation, etc)
+1
+0D
+General 1D
+0
+0

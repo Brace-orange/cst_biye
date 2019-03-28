@@ -1,0 +1,23 @@
+Postprocessing Logfile 
+
+----------------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+----------------------------------------------------------------------------------------
+
+Template based postprocessing started at: 04:26 PM Wednesday, 27. March 2019
+
+  Evaluating 'S1,1dB': 0 s
+  Evaluating 'S2,1dB': 0 s
+  Evaluating 'S1,1dB_0D_yAtX': 0 s
+  Evaluating 'S2,1dB_0D_yAtX': 0 s
+  Evaluating 'S2,1_0D_yAtX': 0 s
+
+  Total time: 0 s  ( = 0 h, 0 m, 0 s )
+
+Template based postprocessing finished at: 04:26 PM Wednesday, 27. March 2019
+----------------------------------------------------------------------------------------

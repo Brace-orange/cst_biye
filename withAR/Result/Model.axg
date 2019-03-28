@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CSTAuxiliaryGeometry version="20140129">
   <BoundingBox name="BoundingBox">
-    <BoxBody position="-1.249135255814 -1.249135255814 -1.249135255814" dimension="4.998270511627 4.998270511627 15.49827003479"/>
+    <BoxBody position="0 0 0" dimension="2.5 2.5 2"/>
   </BoundingBox>
   <WaveguidePort name="Ports\port1">
-    <LineSet points="0 0 13 2.5 0 13 2.5 2.5 13 0 2.5 13 0 0 13" text="1"/>
+    <LineSet points="0 0 2 2.5 0 2 2.5 2.5 2 0 2.5 2 0 0 2" text="1"/>
   </WaveguidePort>
   <WaveguidePort name="Ports\port2">
     <LineSet points="0 0 0 2.5 0 0 2.5 2.5 0 0 2.5 0 0 0 0" text="2"/>

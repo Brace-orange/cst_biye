@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaGeometryFile creator="MatrixCalc" version="20140129">
+  <Components>
+    <Component name="component1:withAR">
+      <Shape name="Components\component1:withAR" id="1" visible="1" material="material1">
+        <MeshGroup3D list=""/>
+        <Face>
+          <MeshGroup0D list=""/>
+          <MeshGroup1D list=""/>
+          <MeshGroup2D>
+            <Pos list="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16"/>
+            <Neg list=""/>
+            <DS list=""/>
+          </MeshGroup2D>
+        </Face>
+      </Shape>
+    </Component>
+  </Components>
+  <SimulationDomain min="0 0 -1.249135255814" max="2.5 2.5 15.2491350174"/>
+  <Materials>
+    <Material name="air_0" priority="1">
+      <Color value="1 1 1"/>
+      <Transparency value="0"/>
+      <Wireframe value="0"/>
+      <Reflective value="1"/>
+      <Outline value="1"/>
+      <OutlineIfTransparent value="0"/>
+    </Material>
+    <Material name="material1" priority="1">
+      <Color value="1 1 1"/>
+      <Transparency value="0"/>
+      <Wireframe value="0"/>
+      <Reflective value="1"/>
+      <Outline value="1"/>
+      <OutlineIfTransparent value="0"/>
+    </Material>
+  </Materials>
+  <GeometryFile filename="3d.slm" type="slim"/>
+  <MeshType type="HEX"/>
+  <HexMesh>
+    <Dimensions nx="13" ny="13" nz="64"/>
+    <MeshPlanesX values="0 0.15 0.3 0.525 0.75 0.975 1.2 1.425 1.65 1.875 2.1 2.3 2.5"/>
+    <MeshPlanesY values="0 0.15 0.3 0.525 0.75 0.975 1.2 1.425 1.65 1.875 2.1 2.3 2.5"/>
+    <MeshPlanesZ values="-1.249135241667 -0.8327568277778 -0.4163784138889 0 0.2375 0.475 0.7125 0.95 1.19693877551 1.44387755102 1.690816326531 1.937755102041 2.184693877551 2.431632653061 2.678571428571 2.925510204082 3.172448979592 3.419387755102 3.666326530612 3.913265306122 4.160204081633 4.407142857143 4.654081632653 4.901020408163 5.147959183673 5.394897959184 5.641836734694 5.888775510204 6.135714285714 6.382653061224 6.629591836735 6.876530612245 7.123469387755 7.370408163265 7.617346938775 7.864285714286 8.111224489796 8.358163265306 8.605102040816 8.852040816326 9.098979591837 9.345918367347 9.592857142857 9.839795918367 10.08673469388 10.33367346939 10.5806122449 10.82755102041 11.07448979592 11.32142857143 11.56836734694 11.81530612245 12.06224489796 12.30918367347 12.55612244898 12.80306122449 13.05 13.2875 13.525 13.7625 14 14.41637841389 14.83275682778 15.24913524167"/>
+  </HexMesh>
+</MetaGeometryFile>

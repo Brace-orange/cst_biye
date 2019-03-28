@@ -3,7 +3,7 @@
 [Author]
 Administrator
 [Mesh Cells]
-19,116
+1,296
 [Mesh Type]
 Hexahedral
 [Last Problem Type]
@@ -15,5 +15,5 @@ t
 [Results]
 Time Domain: S-Parameter
 [Modeler Unique ID]
-5:withar.cst?4a44887749b3abbad243d2af7a278532?9933:numberofparameters=1:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::length
+5:withar.cst?9aab090ace76fbe74b6ffeccc6507600?14258:numberofparameters=1:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::length
 [Comment]
