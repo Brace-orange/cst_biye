@@ -1,7 +1,5 @@
---------------------------------------------------------------------------
-
 ==========================================================================
-Sequence: Sequence 2
+Sequence: Sequence 1
 ==========================================================================
 
 --------------------------------------------------------------------------
@@ -11,89 +9,17 @@ Parameter Values:
 
 Structure update: Successful
           Solver: Successful
-     Solver time: 0 hours, 0 min., 18 sec.
+     Solver time: 0 hours, 0 min., 31 sec.
 --------------------------------------------------------------------------
 Parameter Values: 
 
    length = 3
 
 Structure update: Successful
-          Solver: Successful
-     Solver time: 0 hours, 0 min., 17 sec.
---------------------------------------------------------------------------
-Parameter Values: 
-
-   length = 4
-
-Structure update: Successful
-          Solver: Successful
-     Solver time: 0 hours, 0 min., 18 sec.
---------------------------------------------------------------------------
-Parameter Values: 
-
-   length = 5
-
-Structure update: Successful
-          Solver: Successful
-     Solver time: 0 hours, 0 min., 18 sec.
---------------------------------------------------------------------------
-Parameter Values: 
-
-   length = 6
-
-Structure update: Successful
-          Solver: Successful
-     Solver time: 0 hours, 0 min., 18 sec.
---------------------------------------------------------------------------
-Parameter Values: 
-
-   length = 7
-
-Structure update: Successful
-          Solver: Successful
-     Solver time: 0 hours, 0 min., 18 sec.
---------------------------------------------------------------------------
-Parameter Values: 
-
-   length = 8
-
-Structure update: Successful
-          Solver: Successful
-     Solver time: 0 hours, 0 min., 19 sec.
---------------------------------------------------------------------------
-Parameter Values: 
-
-   length = 9
-
-Structure update: Successful
-          Solver: Successful
-     Solver time: 0 hours, 0 min., 18 sec.
---------------------------------------------------------------------------
-Parameter Values: 
-
-   length = 10
-
-Structure update: Successful
-          Solver: Successful
-     Solver time: 0 hours, 0 min., 19 sec.
---------------------------------------------------------------------------
-Parameter Values: 
-
-   length = 11
-
-Structure update: Successful
-          Solver: Successful
-     Solver time: 0 hours, 0 min., 18 sec.
---------------------------------------------------------------------------
-Parameter Values: 
-
-   length = 12
-
-Structure update: Successful
-          Solver: Successful
-     Solver time: 0 hours, 0 min., 18 sec.
+          Solver: Aborted
+     Solver time: 0 hours, 2 min., 37 sec.
 --------------------------------------------------------------------------
 
 ==========================================================================
-Total solver time: 0 hours, 3 min., 19 sec.
+Total solver time: 0 hours, 3 min., 8 sec.
 ==========================================================================

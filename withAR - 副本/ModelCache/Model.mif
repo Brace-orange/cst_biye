@@ -31,8 +31,8 @@ Solver.FrequencyRange "50", "70"
      .Xmax "magnetic" 
      .Ymin "electric" 
      .Ymax "electric" 
-     .Zmin "open" 
-     .Zmax "open" 
+     .Zmin "expanded open" 
+     .Zmax "expanded open" 
      .Xsymmetry "none" 
      .Ysymmetry "none" 
      .Zsymmetry "none" 
@@ -404,7 +404,7 @@ Solver.FrequencyRange "50", "70"
      .SingleEnded "False" 
      .ConsiderForStructureBoundary "False" 
      .ReferenceWCS "1.25", "1.25", "0", "0", "0", "1", "0", "1", "0"
-(TRANSFORM) "1", "0", "0", "0", "1", "0", "0", "0", "1"| "0", "0", "12"(ENDTRANSFORM)
+(TRANSFORM) "1", "0", "0", "0", "1", "0", "0", "0", "1"| "0", "0", "4.2491352416667"(ENDTRANSFORM)
 [ENDWAVEGUIDE]
 [WAVEGUIDE: 2]
      .Label "" 
@@ -426,5 +426,5 @@ Solver.FrequencyRange "50", "70"
      .SingleEnded "False" 
      .ConsiderForStructureBoundary "False" 
      .ReferenceWCS "1.25", "1.25", "0", "0", "0", "-1", "0", "1", "0"
-(TRANSFORM) "1", "0", "0", "0", "1", "0", "0", "0", "1"| "0", "0", "0"(ENDTRANSFORM)
+(TRANSFORM) "1", "0", "0", "0", "1", "0", "0", "0", "1"| "0", "0", "-1.2491352416667"(ENDTRANSFORM)
 [ENDWAVEGUIDE]

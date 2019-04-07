@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CSTAuxiliaryGeometry version="20140129">
   <BoundingBox name="BoundingBox">
-    <BoxBody position="0 0 0" dimension="2.5 2.5 12"/>
+    <BoxBody position="0 0 -1.249135255814" dimension="2.5 2.5 5.49827003479"/>
   </BoundingBox>
   <WaveguidePort name="Ports\port1">
-    <LineSet points="0 0 12 2.5 0 12 2.5 2.5 12 0 2.5 12 0 0 12" text="1"/>
+    <LineSet points="0 0 4.249135017395 2.5 0 4.249135017395 2.5 2.5 4.249135017395 0 2.5 4.249135017395 0 0 4.249135017395" text="1"/>
   </WaveguidePort>
   <WaveguidePort name="Ports\port2">
-    <LineSet points="0 0 0 2.5 0 0 2.5 2.5 0 0 2.5 0 0 0 0" text="2"/>
+    <LineSet points="0 0 -1.249135255814 2.5 0 -1.249135255814 2.5 2.5 -1.249135255814 0 2.5 -1.249135255814 0 0 -1.249135255814" text="2"/>
   </WaveguidePort>
   <Materials>
     <Material name="Wire^Material">

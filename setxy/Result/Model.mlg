@@ -1,0 +1,49 @@
+----------------------------------------------------------------------
+  Total number of passes   :	1
+  Mesh adaptation pass     :	1
+  Simulation point         :	70 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	1 s
+  Mesh refinement time     :	4 s
+  Number of mesh cells     :	2257
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total number of passes   :	2
+  Mesh adaptation pass     :	2
+  Simulation point         :	70 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	1 s
+  Mesh refinement time     :	1 s
+  Number of mesh cells     :	3371
+  Max. S-Parameter delta   :	0.0120581
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total number of passes   :	3
+  Mesh adaptation pass     :	3
+  Simulation point         :	70 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	1 s
+  Mesh refinement time     :	1 s
+  Number of mesh cells     :	4598
+  Max. S-Parameter delta   :	0.00492106
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total number of passes   :	4
+  Mesh adaptation pass     :	4
+  Simulation point         :	70 GHz
+----------------------------------------------------------------------
+  Solver time w/o ref.     :	2 s
+  Mesh refinement time     :	0 s
+  Number of mesh cells     :	5827
+  Max. S-Parameter delta   :	0.0018889
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+  Total solver time        :	11 s
+
+  Desired accuracy limit reached, mesh adaptation stopped.
+----------------------------------------------------------------------
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaGeometryFile creator="TetMesher" version="20140429">
+  <Components>
+    <Component name="Components\air_0:brick">
+      <Shape name="Components\air_0:brick" id="0" visible="1" material="air_0">
+        <MeshGroup3D list="113 111"/>
+        <Face>
+          <MeshGroup0D list=""/>
+          <MeshGroup1D list=""/>
+          <MeshGroup2D>
+            <Pos list="97 99 100 101 103 105 106 107 109 110"/>
+            <Neg list="85 86 87 88 89 90 91 92 93 94 95 96"/>
+            <DS list=""/>
+          </MeshGroup2D>
+        </Face>
+      </Shape>
+    </Component>
+    <Component name="Components\component1:withAR">
+      <Shape name="Components\component1:withAR" id="1" visible="1" material="material1">
+        <MeshGroup3D list="112"/>
+        <Face>
+          <MeshGroup0D list=""/>
+          <MeshGroup1D list=""/>
+          <MeshGroup2D>
+            <Pos list="85 86 87 88 89 90 91 92 93 94 95 96 98 102 104 108"/>
+            <Neg list=""/>
+            <DS list=""/>
+          </MeshGroup2D>
+        </Face>
+      </Shape>
+    </Component>
+    <Component name="Components\air_0:brick\PEC_Background">
+      <Shape name="Components\air_0:brick\PEC_Background" id="2" visible="1" material="air_0">
+        <MeshGroup3D list=""/>
+        <Face>
+          <MeshGroup0D list=""/>
+          <MeshGroup1D list=""/>
+          <MeshGroup2D>
+            <Pos list=""/>
+            <Neg list="97 103 107 109"/>
+            <DS list=""/>
+          </MeshGroup2D>
+        </Face>
+      </Shape>
+    </Component>
+    <Component name="Components\component1:withAR\PEC_Background">
+      <Shape name="Components\component1:withAR\PEC_Background" id="3" visible="1" material="material1">
+        <MeshGroup3D list=""/>
+        <Face>
+          <MeshGroup0D list=""/>
+          <MeshGroup1D list=""/>
+          <MeshGroup2D>
+            <Pos list=""/>
+            <Neg list="98 104"/>
+            <DS list=""/>
+          </MeshGroup2D>
+        </Face>
+      </Shape>
+    </Component>
+  </Components>
+  <SimulationDomain min="0 0 -1.249135255814" max="2.5 2.5 13.2491350174"/>
+  <Materials>
+    <Material name="air_0" priority="1">
+      <Color value="0 0 0"/>
+      <Transparency value="0"/>
+      <Wireframe value="0"/>
+      <Reflective value="1"/>
+      <Outline value="1"/>
+      <OutlineIfTransparent value="0"/>
+    </Material>
+    <Material name="material1" priority="1">
+      <Color value="0.5 0.5 0.5"/>
+      <Transparency value="0"/>
+      <Wireframe value="0"/>
+      <Reflective value="1"/>
+      <Outline value="1"/>
+      <OutlineIfTransparent value="0"/>
+    </Material>
+  </Materials>
+  <GeometryFile filename="3d.slim" type="slim"/>
+  <MeshType type="TETRAHEDRAL"/>
+  <HexMesh>
+    <Dimensions nx="7" ny="7" nz="16"/>
+    <MeshPlanesX values="0 0.4166666666667 0.8333333333333 1.25 1.666666666667 2.083333333333 2.5"/>
+    <MeshPlanesY values="0 0.4166666666667 0.8333333333333 1.25 1.666666666667 2.083333333333 2.5"/>
+    <MeshPlanesZ values="-1.249135255814 -0.2825839042664 0.6839674472809 1.650518798828 2.617070150375 3.583621501923 4.55017285347 5.516724205017 6.483275556564 7.449826908112 8.416378259659 9.382929611206 10.34948096275 11.3160323143 12.28258366585 13.2491350174"/>
+  </HexMesh>
+</MetaGeometryFile>

@@ -1,0 +1,305 @@
+=== BEGIN SESSION ==========================================================
+[21:29:42] Build: 64bit; Number: 20150116; ID: 2015.0 Release from 2015-01-16 (change 344899); Date: 2015-01-16
+[21:29:42] ACIS version: 24.0.2
+[21:29:42] SPAresabs = 1e-006
+[21:29:42] SPAresnor = 1e-010
+[21:29:42] Reading entity list
+[21:29:42] Using new attribute mapping scheme
+[21:29:42] UID: 1 EIDs: 55, 
+[21:29:42] UID: 2 EIDs: 56, 
+[21:29:42] UID: 3 EIDs: 57, 
+[21:29:42] UID: 4 EIDs: 58, 
+[21:29:42] UID: 5 EIDs: 59, 
+[21:29:42] UID: 6 EIDs: 60, 
+[21:29:42] UID: 7 EIDs: 61, 
+[21:29:42] UID: 8 EIDs: 62, 
+[21:29:42] UID: 9 EIDs: 63, 
+[21:29:42] UID: 10 EIDs: 64, 
+[21:29:42] UID: 11 EIDs: 65, 
+[21:29:42] UID: 12 EIDs: 66, 
+[21:29:42] UID: 13 EIDs: 67, 
+[21:29:42] UID: 14 EIDs: 68, 
+[21:29:42] UID: 15 EIDs: 69, 
+[21:29:42] UID: 16 EIDs: 70, 
+[21:29:42] UID: 17 EIDs: 71, 
+[21:29:42] UID: 18 EIDs: 72, 
+[21:29:42] UID: 19 EIDs: 73, 
+[21:29:42] UID: 20 EIDs: 74, 
+[21:29:42] UID: 21 EIDs: 75, 
+[21:29:42] UID: 22 EIDs: 76, 
+[21:29:42] UID: 23 EIDs: 77, 
+[21:29:42] UID: 24 EIDs: 78, 
+[21:29:42] UID: 25 EIDs: 39, 123, 
+[21:29:42] UID: 26 EIDs: 42, 124, 
+[21:29:42] UID: 27 EIDs: 41, 121, 
+[21:29:42] UID: 28 EIDs: 38, 116, 
+[21:29:42] UID: 29 EIDs: 37, 119, 
+[21:29:42] UID: 30 EIDs: 40, 122, 
+[21:29:42] UID: 31 EIDs: 35, 117, 
+[21:29:42] UID: 32 EIDs: 36, 118, 
+[21:29:42] UID: 33 EIDs: 79, 
+[21:29:42] UID: 34 EIDs: 80, 
+[21:29:42] UID: 35 EIDs: 81, 
+[21:29:42] UID: 36 EIDs: 82, 
+[21:29:42] UID: 37 EIDs: 83, 
+[21:29:42] UID: 38 EIDs: 84, 
+[21:29:42] UID: 39 EIDs: 85, 
+[21:29:42] UID: 40 EIDs: 86, 
+[21:29:42] UID: 41 EIDs: 87, 
+[21:29:42] UID: 42 EIDs: 88, 
+[21:29:42] UID: 43 EIDs: 89, 
+[21:29:42] UID: 44 EIDs: 90, 
+[21:29:42] UID: 45 EIDs: 91, 
+[21:29:42] UID: 46 EIDs: 92, 
+[21:29:42] UID: 47 EIDs: 93, 
+[21:29:42] UID: 48 EIDs: 94, 
+[21:29:42] UID: 49 EIDs: 95, 
+[21:29:42] UID: 50 EIDs: 96, 
+[21:29:42] UID: 51 EIDs: 97, 
+[21:29:42] UID: 52 EIDs: 98, 
+[21:29:42] UID: 53 EIDs: 99, 
+[21:29:42] UID: 54 EIDs: 100, 
+[21:29:42] UID: 55 EIDs: 101, 
+[21:29:42] UID: 56 EIDs: 102, 
+[21:29:42] UID: 57 EIDs: 103, 
+[21:29:42] UID: 58 EIDs: 104, 
+[21:29:42] UID: 59 EIDs: 105, 
+[21:29:42] UID: 60 EIDs: 106, 
+[21:29:42] UID: 61 EIDs: 107, 
+[21:29:42] UID: 62 EIDs: 108, 
+[21:29:42] UID: 63 EIDs: 109, 
+[21:29:42] UID: 64 EIDs: 110, 
+[21:29:42] UID: 65 EIDs: 54, 
+[21:29:42] UID: 66 EIDs: 32, 50, 
+[21:29:42] UID: 67 EIDs: 53, 
+[21:29:42] UID: 68 EIDs: 54, 114, 
+[21:29:42] UID: 69 EIDs: 53, 113, 
+[21:29:42] UID: 70 EIDs: 33, 49, 
+[21:29:42] UID: 71 EIDs: 51, 
+[21:29:42] UID: 72 EIDs: 51, 
+[21:29:42] UID: 73 EIDs: 28, 45, 
+[21:29:42] UID: 74 EIDs: 53, 
+[21:29:42] UID: 75 EIDs: 52, 
+[21:29:42] UID: 76 EIDs: 31, 47, 
+[21:29:42] UID: 77 EIDs: 52, 112, 
+[21:29:42] UID: 78 EIDs: 30, 48, 
+[21:29:42] UID: 79 EIDs: 51, 111, 
+[21:29:42] UID: 80 EIDs: 26, 43, 
+[21:29:42] UID: 81 EIDs: 27, 44, 
+[21:29:42] UID: 82 EIDs: 25, 46, 
+[21:29:42] UID: 83 EIDs: 52, 
+[21:29:42] UID: 84 EIDs: 54, 
+[21:29:42] UID: 85 EIDs: 9, 
+[21:29:42] UID: 86 EIDs: 10, 
+[21:29:42] UID: 87 EIDs: 11, 
+[21:29:42] UID: 88 EIDs: 12, 
+[21:29:42] UID: 89 EIDs: 13, 
+[21:29:42] UID: 90 EIDs: 14, 
+[21:29:42] UID: 91 EIDs: 15, 
+[21:29:42] UID: 92 EIDs: 16, 
+[21:29:42] UID: 93 EIDs: 17, 
+[21:29:42] UID: 94 EIDs: 18, 
+[21:29:42] UID: 95 EIDs: 19, 
+[21:29:42] UID: 96 EIDs: 20, 
+[21:29:42] UID: 97 EIDs: 6, 
+[21:29:42] UID: 98 EIDs: 6, 23, 
+[21:29:42] WARNING: Equivalent EIDs 6, 23 resolved to 6
+[21:29:42] UID: 99 EIDs: 5, 
+[21:29:42] UID: 100 EIDs: 5, 
+[21:29:42] UID: 101 EIDs: 7, 
+[21:29:42] UID: 102 EIDs: 7, 24, 
+[21:29:42] UID: 103 EIDs: 4, 
+[21:29:42] UID: 104 EIDs: 4, 21, 
+[21:29:42] WARNING: Equivalent EIDs 4, 21 resolved to 4
+[21:29:42] UID: 105 EIDs: 2, 29, 
+[21:29:42] UID: 106 EIDs: 3, 34, 
+[21:29:42] UID: 107 EIDs: 4, 
+[21:29:42] UID: 108 EIDs: 5, 22, 
+[21:29:42] UID: 109 EIDs: 6, 
+[21:29:42] UID: 110 EIDs: 7, 
+[21:29:42] UID: 111 EIDs: 1, 
+[21:29:42] UID: 112 EIDs: 1, 8, 
+[21:29:42] UID: 113 EIDs: 1, 
+[21:29:42] - Reading information
+[21:29:42] - Storing model cells
+[21:29:42] - OK
+[21:29:42] Creating ModelDatabase
+[21:29:42] - Model stats: VERTICES = 32, EDGES = 52, FACES = 26, CELLS = 3
+[21:29:42] Problem class: High Frequency
+[21:29:42] - Mesh sizes: global mesh size near to model = 0.3
+              min requested = 0.3
+              max requested = 1.55307
+[21:29:42] - OK
+[21:29:42] -- Building object info
+[21:29:42] -- OK
+[21:29:42] Temporary directory: "C:\Users\Lenovo\Desktop\毕业设计\cst_biye\withAR - 副本\Temp\1-temp.tet"
+[21:29:42] [CADSurf] Section started.
+[21:29:42] [CADSurf] MeshGems Version: MeshGems-Core 1.3-6
+[21:29:42] [CADSurf] == PreCAD Parameters == 
+[21:29:42] [CADSurf] Bounding box diagonal = 6.53689
+[21:29:42] [CADSurf] meshgems_precad_set_param(pcs, "verbose",  "5")
+[21:29:42] [CADSurf] meshgems_precad_set_param(pcs, "remove_nano_edges",  "0")
+[21:29:42] [CADSurf] meshgems_precad_set_param(pcs, "discard_input_topology",  "0")
+[21:29:42] [CADSurf] meshgems_precad_set_param(pcs, "process_3d_topology",  "0")
+[21:29:42] [CADSurf] meshgems_precad_set_param(pcs, "discard_input_2d_topology",  "0")
+[21:29:42] [CADSurf] Default periodic tolerance (1e-5*diag) = 6.53689e-005
+[21:29:42] [CADSurf] Minimum periodic tolerance = 1e-005
+[21:29:42] [CADSurf] Setting it to max( 1e-005, 6.53689e-005 )
+[21:29:42] [CADSurf] meshgems_precad_set_param(pcs, "periodic_tolerance",  "6.5368936283141839e-005")
+[21:29:42] [CADSurf] meshgems_precad_set_param(pcs, "remove_duplicate_cad_faces",  "0")
+[21:29:42] [CADSurf] meshgems_precad_set_param(pcs, "remove_tiny_uv_edges",  "0")
+[21:29:42] [CADSurf] ==
+[21:29:42] [CADSurf] PreCAD status: STATUS_OK
+[21:29:42] [CADSurf] MeshGems Version: MeshGems-Core 1.3-6
+[21:29:42] [CADSurf] == CADSurf Parameters == 
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "verbose",  "3")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "geometric_size_mode",  "local")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "physical_size_mode",  "local")
+[21:29:42] [CADSurf] 	 Max user size    = 1.55307
+[21:29:42] [CADSurf] 	 Global size near = 0.3
+[21:29:42] [CADSurf] 	 Global size far  = 1.55307
+[21:29:42] [CADSurf] 	 Upper size bound = 1.55307
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "max_size",  "1.5530651537928701")
+[21:29:42] [CADSurf] 	PreCAD model box diagonal = 6.53689
+[21:29:42] [CADSurf] 	Default lower size bound (1e-3*diag) = 0.00653689
+[21:29:42] [CADSurf] 	Minimum size requested by user = 0.3
+[21:29:42] [CADSurf] 	Default lower size bound is too large (large bbox), consider using (0.01 * mesh size near to model) = 0.003
+[21:29:42] [CADSurf] 	Using "size_min" setting for geometric refinement
+[21:29:42] [CADSurf] 	Setting "size_min" for CADSurf  = 0.0030000000000000001
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "min_size",  "0.0030000000000000001")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "max_number_of_points_per_patch",  "0")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "element_generation",  "triangle")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "gradation",  "2")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "volume_gradation",  "2")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "patch_independent",  "0")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "remove_tiny_edges",  "0")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "optimise_tiny_edges",  "0")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "tiny_edge_respect_geometry",  "1")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "CheckWellDefined",  "8")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "anisotropic",  "1")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "anisotropic_ratio",  "5")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "correct_surface_intersections",  "1")
+[21:29:42] [CADSurf] meshgems_cadsurf_set_param(css, "intersection_processing_max_cost",  "15")
+[21:29:42] [CADSurf] ==
+[21:29:42] [CADSurf] Status: OK
+[21:29:42] [CADSurf] Number of intersecting edges: 0
+[21:29:42] [CADSurf] Number of intersecting faces: 0
+[21:29:42] [CADSurf] - Mesh stats: N=792, E=272, T=1640, Q=0
+[21:29:43] [CADSurf] Testing watertightness
+[21:29:43] [CADSurf] - OK
+[21:29:43] [CADSurf] Section finished. Time (s): 0.261
+[21:29:43] Labeling mesh entities
+[21:29:43] Decomposing surface mesh
+[21:29:43] - Number of surface mesh entities: Nodes = 792, Edges = 272, Faces = 1640
+[21:29:43] - Saving subdomains
+[21:29:43] -- Saving "air_0:brick" as "tmp_sd_1"
+[21:29:43] -- Saving "component1:withAR" as "tmp_sd_2"
+[21:29:43] -- Saving "air_0:brick" as "tmp_sd_3"
+[21:29:43] Creating volume mesh
+[21:29:43] - Submitting for meshing subdomain 1 of 3, Name: 'air_0:brick'
+[21:29:43]  - File: tmp_sd_1
+[21:29:43] GHS3DLoop: Preparing worker for subdomain background material
+[21:29:43] GHS3DLoop: Generating GHS3D command line for subdomain background material
+[21:29:43] GHS3DLoop: Generated GHS3D Command Line:
+		C:\Program Files (x86)\CST STUDIO SUITE 2015\AMD64\ghs3d_AMD64.exe --in tmp_sd_1 --out tmp_sd_1_out.meshb  --key ed1e866d945e5407c960e7fcd623ee378d5de2e7df3f0d4c5acee0702b60b2fd16fd3609cff3362f36b035af8d --max_memory 2048 --use_deprecated_errors yes -Dcpropa=2 -H-1:1.55307:2 -b -c 1 -t -v 0
+[21:29:43] GHS3DLoop: Added worker for subdomain background material to the workers list
+[21:29:43] - Submitting for meshing subdomain 2 of 3, Name: 'component1:withAR'
+[21:29:43]  - File: tmp_sd_2
+[21:29:43] GHS3DLoop: Preparing worker for subdomain component1:withAR
+[21:29:43] GHS3DLoop: Generating GHS3D command line for subdomain component1:withAR
+[21:29:43] GHS3DLoop: Generated GHS3D Command Line:
+		C:\Program Files (x86)\CST STUDIO SUITE 2015\AMD64\ghs3d_AMD64.exe --in tmp_sd_2 --out tmp_sd_2_out.meshb  --key ed1e866d945e5407c960e7fcd623ee378d5de2e7df3f0d4c5acee0702b60b2fd16fd3609cfc03251348331d18f --max_memory 2048 --use_deprecated_errors yes -Dcpropa=2 -H-1:0.3:2 -b -c 1 -t -v 0
+[21:29:43] GHS3DLoop: Added worker for subdomain component1:withAR to the workers list
+[21:29:43] - Submitting for meshing subdomain 3 of 3, Name: 'air_0:brick'
+[21:29:43]  - File: tmp_sd_3
+[21:29:43] GHS3DLoop: Preparing worker for subdomain background material
+[21:29:43] GHS3DLoop: Generating GHS3D command line for subdomain background material
+[21:29:43] GHS3DLoop: Generated GHS3D Command Line:
+		C:\Program Files (x86)\CST STUDIO SUITE 2015\AMD64\ghs3d_AMD64.exe --in tmp_sd_3 --out tmp_sd_3_out.meshb  --key ed1e866d945e5407c960e7fcd623ee378d5de2e7df3f0d4c5acee0702b60b2fd16fd3609cffc362936bf35a98d --max_memory 2048 --use_deprecated_errors yes -Dcpropa=2 -H-1:1.55307:2 -b -c 1 -t -v 0
+[21:29:43] GHS3DLoop: Added worker for subdomain background material to the workers list
+[21:29:43] Volume meshing: 2 threads will be allocated to mesh 3 sub-domains.
+[21:29:43] Usable physical memory (bytes):    1454395392
+[21:29:43] Available physical memory (bytes): 1454395392
+[21:29:43] Number of cores: 2
+[21:29:43] GHS3DLoop: Entering the Run function with 2 threads.
+[21:29:43] GHS3DLoop: Created pool to process workers
+[21:29:43] GHS3DLoop: Added  worker (subdomain air_0:brick) to the pool
+[21:29:43] GHS3DLoop: Added  worker (subdomain component1:withAR) to the pool
+[21:29:43] GHS3DLoop: Added  worker (subdomain air_0:brick) to the pool
+[21:29:43] GHS3DWorker: Running GHS3D for subdomain "component1:withAR" (first try)
+[21:29:43] GHS3DWorker: Running GHS3D for subdomain "air_0:brick" (first try)
+[21:29:43] GHS3DWorker: Starting Command: C:\Program Files (x86)\CST STUDIO SUITE 2015\AMD64\AppRunner_AMD64.exe --interval 1000 --parent 13292 --command "C:\Program Files (x86)\CST STUDIO SUITE 2015\AMD64\ghs3d_AMD64.exe --in tmp_sd_2 --out tmp_sd_2_out.meshb  --key ed1e866d945e5407c960e7fcd623ee378d5de2e7df3f0d4c5acee0702b60b2fd16fd3609cfc03251348331d18f --max_memory 2048 --use_deprecated_errors yes -Dcpropa=2 -H-1:0.3:2 -b -c 1 -t -v 0" --output "tmp_sd_2_out.txt"
+[21:29:43] GHS3DWorker: Starting Command: C:\Program Files (x86)\CST STUDIO SUITE 2015\AMD64\AppRunner_AMD64.exe --interval 1000 --parent 13292 --command "C:\Program Files (x86)\CST STUDIO SUITE 2015\AMD64\ghs3d_AMD64.exe --in tmp_sd_1 --out tmp_sd_1_out.meshb  --key ed1e866d945e5407c960e7fcd623ee378d5de2e7df3f0d4c5acee0702b60b2fd16fd3609cff3362f36b035af8d --max_memory 2048 --use_deprecated_errors yes -Dcpropa=2 -H-1:1.55307:2 -b -c 1 -t -v 0" --output "tmp_sd_1_out.txt"
+[21:29:44] GHS3DWorker: Running GHS3D for subdomain "air_0:brick" (first try)
+[21:29:44] GHS3DWorker: Starting Command: C:\Program Files (x86)\CST STUDIO SUITE 2015\AMD64\AppRunner_AMD64.exe --interval 1000 --parent 13292 --command "C:\Program Files (x86)\CST STUDIO SUITE 2015\AMD64\ghs3d_AMD64.exe --in tmp_sd_3 --out tmp_sd_3_out.meshb  --key ed1e866d945e5407c960e7fcd623ee378d5de2e7df3f0d4c5acee0702b60b2fd16fd3609cffc362936bf35a98d --max_memory 2048 --use_deprecated_errors yes -Dcpropa=2 -H-1:1.55307:2 -b -c 1 -t -v 0" --output "tmp_sd_3_out.txt"
+[21:29:46] GHS3DLoop: All workers in the WorkerPool finished
+[21:29:46] GHS3DLoop: Calling forced shutdown, for safety (effective if an abort was requested)
+[21:29:46] GHS3DLoop: Pool successfully shut down
+[21:29:46] Assembling volume mesh
+[21:29:46] - Reading tmp_sd_1_out.meshb
+[21:29:46] - Reading tmp_sd_2_out.meshb
+[21:29:46] - Reading tmp_sd_3_out.meshb
+[21:29:46] - Number of elements for tmp_sd_1:1287
+[21:29:46] - Number of elements for tmp_sd_2:3638
+[21:29:46] - Number of elements for tmp_sd_3:1279
+[21:29:46] - Volume mesh stats: Nb nodes = 1286, Nb edges = 7941, Nb faces = 12860, Nb tets = 6204
+[21:29:46] - Min/Max edge length after volume mesh assembly: min = 0.124105, max = 1.76266
+[21:29:46] Writing slim mesh file
+[21:29:46] [DuplicateSurface] Section started.
+[21:29:46] [DuplicateSurface] Section finished. Time (s): 0
+[21:29:46] [DuplicateSurface] Section started.
+[21:29:46] [DuplicateSurface] Section finished. Time (s): 0.015
+[21:29:46] Using generalized mesh output routines.
+[21:29:46] Writing Bc file
+[21:29:46] Writing gex file for volume mesh
+[21:29:46] Using generalized UID topology and model geometry output
+[21:29:46] Mesh curving:
+[21:29:46]     available cores:   2
+[21:29:46]     number of threads: 2 (NumberOfParallelThreads setting)
+[21:29:46] Curving elements
+[21:29:46] Done
+=== END SESSION ============================================================
+=== BEGIN SESSION ==========================================================
+[21:29:47] Build: 64bit; Number: 20150116; ID: 2015.0 Release from 2015-01-16 (change 344899); Date: 2015-01-16
+[21:29:47] ACIS version: 24.0.2
+[21:29:47] SPAresabs = 1e-006
+[21:29:47] SPAresnor = 1e-010
+[21:29:47] Adaptive mesh refinement (pos.snap.)
+[21:29:47] - Refining mesh
+[21:29:47] Problem class: High Frequency
+[21:29:48] - OK
+[21:29:48] Done
+=== END SESSION ============================================================
+=== BEGIN SESSION ==========================================================
+[21:29:48] Build: 64bit; Number: 20150116; ID: 2015.0 Release from 2015-01-16 (change 344899); Date: 2015-01-16
+[21:29:48] ACIS version: 24.0.2
+[21:29:48] SPAresabs = 1e-006
+[21:29:48] SPAresnor = 1e-010
+[21:29:48] Adaptive mesh refinement (pos.snap.)
+[21:29:48] - Refining mesh
+[21:29:48] Problem class: High Frequency
+[21:29:49] - OK
+[21:29:49] Done
+=== END SESSION ============================================================
+=== BEGIN SESSION ==========================================================
+[21:29:51] Build: 64bit; Number: 20150116; ID: 2015.0 Release from 2015-01-16 (change 344899); Date: 2015-01-16
+[21:29:51] ACIS version: 24.0.2
+[21:29:51] SPAresabs = 1e-006
+[21:29:51] SPAresnor = 1e-010
+[21:29:51] Adaptive mesh refinement (pos.snap.)
+[21:29:51] - Refining mesh
+[21:29:51] Problem class: High Frequency
+[21:29:52] - OK
+[21:29:52] Done
+=== END SESSION ============================================================
+=== BEGIN SESSION ==========================================================
+[21:29:54] Build: 64bit; Number: 20150116; ID: 2015.0 Release from 2015-01-16 (change 344899); Date: 2015-01-16
+[21:29:54] ACIS version: 24.0.2
+[21:29:54] SPAresabs = 1e-006
+[21:29:54] SPAresnor = 1e-010
+[21:29:54] Adaptive mesh refinement (pos.snap.)
+[21:29:54] - Refining mesh
+[21:29:54] Problem class: High Frequency
+[21:29:55] - OK
+[21:29:55] Done
+=== END SESSION ============================================================
