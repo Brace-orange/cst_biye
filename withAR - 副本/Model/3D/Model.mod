@@ -304,11 +304,12 @@ With Brick
      .Name "hole" 
      .Component "component1" 
      .Material "hole" 
-     .Xrange "0.3", "2.1" 
-     .Yrange "0.3", "2.1" 
-     .Zrange "0", "0.95" 
+     .Xrange "Y0", "Y1" 
+     .Yrange "Y0", "Y1" 
+     .Zrange "0", "HT" 
      .Create
 End With
+
 
 '@ transform: translate component1:hole
 
@@ -341,11 +342,12 @@ With Brick
      .Name "solid1" 
      .Component "component1" 
      .Material "hole" 
-     .Xrange "0.3", "2.1" 
-     .Yrange "0.3", "2.1" 
-     .Zrange "length-0.95", "length" 
+     .Xrange "X0", "X1" 
+     .Yrange "X0", "X1" 
+     .Zrange "length-HT", "length" 
      .Create
 End With
+
 
 '@ pick face
 
@@ -852,8 +854,8 @@ With Boundary
      .Xmax "magnetic" 
      .Ymin "electric" 
      .Ymax "electric" 
-     .Zmin "open" 
-     .Zmax "open" 
+     .Zmin "expanded open" 
+     .Zmax "expanded open" 
      .Xsymmetry "none" 
      .Ysymmetry "none" 
      .Zsymmetry "none" 
@@ -880,6 +882,192 @@ With Boundary
      .ZminTemperatureType "None" 
      .ZmaxTemperature "" 
      .ZmaxTemperatureType "None" 
+End With
+
+'@ change solver type
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+ChangeSolverType "HF Frequency Domain"
+
+'@ define frequency domain solver parameters
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Mesh.SetCreator "High Frequency" 
+With FDSolver
+     .Reset 
+     .SetMethod "Tetrahedral", "General purpose" 
+     .OrderTet "Second" 
+     .OrderSrf "First" 
+     .Stimulation "1", "1" 
+     .ResetExcitationList 
+     .AutoNormImpedance "False" 
+     .NormingImpedance "50" 
+     .ModesOnly "False" 
+     .ConsiderPortLossesTet "True" 
+     .SetShieldAllPorts "False" 
+     .AccuracyHex "1e-6" 
+     .AccuracyTet "1e-4" 
+     .AccuracySrf "1e-3" 
+     .LimitIterations "False" 
+     .MaxIterations "0" 
+     .SetCalculateExcitationsInParallel "True", "False", "" 
+     .StoreAllResults "False" 
+     .StoreResultsInCache "False" 
+     .UseHelmholtzEquation "True" 
+     .LowFrequencyStabilization "True" 
+     .Type "Auto" 
+     .MeshAdaptionHex "False" 
+     .MeshAdaptionTet "True" 
+     .AcceleratedRestart "True" 
+     .FreqDistAdaptMode "Distributed" 
+     .NewIterativeSolver "True" 
+     .TDCompatibleMaterials "False" 
+     .ExtrudeOpenBC "True" 
+     .SetOpenBCTypeHex "Default" 
+     .SetOpenBCTypeTet "Default" 
+     .AddMonitorSamples "True" 
+     .CalcStatBField "False" 
+     .CalcPowerLoss "True" 
+     .CalcPowerLossPerComponent "False" 
+     .StoreSolutionCoefficients "True" 
+     .UseDoublePrecision "False" 
+     .UseDoublePrecision_ML "True" 
+     .MixedOrderSrf "False" 
+     .MixedOrderTet "False" 
+     .PreconditionerAccuracyIntEq "0.15" 
+     .MLFMMAccuracy "Default" 
+     .MinMLFMMBoxSize "0.20" 
+     .UseCFIEForCPECIntEq "true" 
+     .UseFastRCSSweepIntEq "false" 
+     .UseSensitivityAnalysis "False" 
+     .SweepErrorThreshold "True", "0.01" 
+     .SweepErrorChecks "2" 
+     .SweepMinimumSamples "3" 
+     .SweepConsiderAll "True" 
+     .SweepConsiderReset 
+     .SetNumberOfResultDataSamples "1001" 
+     .SweepWeightEvanescent "1.0" 
+     .AccuracyROM "1e-4" 
+     .AddSampleInterval "", "", "1", "Automatic", "True" 
+     .AddSampleInterval "", "", "", "Automatic", "False" 
+     .MPIParallelization "False"
+     .UseDistributedComputing "False"
+     .NetworkComputingStrategy "RunRemote"
+     .NetworkComputingJobCount "3"
+     .LimitCPUs "True"
+     .MaxCPUs "48"
+End With
+With IESolver
+     .Reset 
+     .UseFastFrequencySweep "True" 
+     .UseIEGroundPlane "False" 
+     .SetRealGroundMaterialName "" 
+     .PreconditionerType "Auto" 
+End With
+With IESolver
+     .SetFMMFFCalcStopLevel "0" 
+     .SetFMMFFCalcNumInterpPoints "6" 
+     .UseFMMFarfieldCalc "True" 
+     .SetCFIEAlpha "0.500000" 
+     .LowFrequencyStabilization "False" 
+     .LowFrequencyStabilizationML "True" 
+     .Multilayer "False" 
+     .SetiMoMACC_I "0.0001" 
+     .SetiMoMACC_M "0.0001" 
+     .DeembedExternalPorts "True" 
+     .SetOpenBC_XY "True" 
+     .OldRCSSweepDefintion "False" 
+     .SetAccuracySetting "Custom" 
+     .CalculateSParaforFieldsources "True" 
+End With
+
+'@ delete monitors
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Monitor.Delete "farfield (f=50)" 
+Monitor.Delete "farfield (f=60)" 
+Monitor.Delete "farfield (f=70)"
+
+'@ delete monitors
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Monitor.Delete "power (f=50)" 
+Monitor.Delete "power (f=60)" 
+Monitor.Delete "power (f=70)"
+
+'@ delete monitors
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Monitor.Delete "loss (f=50)" 
+Monitor.Delete "loss (f=60)" 
+Monitor.Delete "loss (f=70)"
+
+'@ delete monitors
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Monitor.Delete "e-field (f=50)" 
+Monitor.Delete "e-field (f=60)" 
+Monitor.Delete "e-field (f=70)" 
+Monitor.Delete "h-field (f=50)" 
+Monitor.Delete "h-field (f=60)" 
+Monitor.Delete "h-field (f=70)"
+
+'@ set parametersweep options
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+    .SetSimulationType "Frequency" 
+End With
+
+'@ edit parsweep parameter: Sequence 2:length
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .DeleteParameter "Sequence 2", "length" 
+     .AddParameter_Samples "Sequence 2", "length", "2", "6", "3", "False" 
+End With
+
+'@ enable parsweep sequence: Sequence 1
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .EnableSequence "Sequence 1", "False" 
+End With
+
+'@ delete parsweep sequence: Sequence 2
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .DeleteSequence "Sequence 2" 
+End With
+
+'@ delete parsweep sequence: Sequence 1
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .DeleteSequence "Sequence 1" 
+End With
+
+'@ add parsweep sequence: Sequence 1
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .AddSequence "Sequence 1" 
+End With
+
+'@ add parsweep parameter: Sequence 1:length
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .AddParameter_Samples "Sequence 1", "length", "2", "5", "3", "False" 
+End With
+
+'@ edit parsweep parameter: Sequence 1:length
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With ParameterSweep
+     .DeleteParameter "Sequence 1", "length" 
+     .AddParameter_Stepwidth "Sequence 1", "length", "2", "12", "1" 
 End With
 
 

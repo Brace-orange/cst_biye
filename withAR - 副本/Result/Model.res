@@ -2,11 +2,19 @@ MWS Result File Version 20140818
 :8:1000
 hidden
 internal
-rebuild
+solverstart
 result
 0
 HIDDENITEM
-S2,1dB_0D_yAtX.rd0
+FieldSetFile.fsf
+:8:1000
+hidden
+internal
+solverstart
+result
+0
+HIDDENITEM
+fd.spd
 :8:1000
 hidden
 internal
@@ -14,7 +22,7 @@ rebuild
 result
 0
 HIDDENITEM
-S1,1dB_0D_yAtX.rd0
+p2(1)1(1)c.sig
 :8:1000
 hidden
 internal
@@ -22,7 +30,7 @@ rebuild
 result
 0
 HIDDENITEM
-S2,1dB.rd1
+a2(1)1(1)c.sig
 :8:1000
 hidden
 internal
@@ -30,7 +38,7 @@ rebuild
 result
 0
 HIDDENITEM
-S1,1dB.rd1
+p1(1)1(1)c.sig
 :8:1000
 hidden
 internal
@@ -38,15 +46,7 @@ rebuild
 result
 0
 HIDDENITEM
-dVolume_loss_in_material1(1).sig
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-aVolume_loss_in_material1(1).sig
+a1(1)1(1)c.sig
 :8:1000
 hidden
 internal
@@ -102,7 +102,7 @@ rebuild
 result
 0
 HIDDENITEM
-RefSpectrum_1.sig
+Port2.tra
 :8:1000
 hidden
 internal
@@ -110,119 +110,7 @@ rebuild
 result
 0
 HIDDENITEM
-power (f=50)_h_1,1.m3d
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-power (f=50)_e_1,1.m3d
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-loss (f=50)_h_1,1.m3d
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-loss (f=50)_e_1,1.m3d
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-loss (f=50)_1,1.m3dr
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-power (f=60)_h_1,1.m3d
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-power (f=60)_e_1,1.m3d
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-loss (f=60)_h_1,1.m3d
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-loss (f=60)_e_1,1.m3d
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-loss (f=60)_1,1.m3dr
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-power (f=70)_h_1,1.m3d
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-power (f=70)_e_1,1.m3d
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-loss (f=70)_h_1,1.m3d
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-loss (f=70)_e_1,1.m3d
-:8:1000
-hidden
-internal
-rebuild
-result
-0
-HIDDENITEM
-loss (f=70)_1,1.m3dr
+Port1.tra
 :8:1000
 hidden
 internal
@@ -230,15 +118,55 @@ survivemeshadapt
 result
 0
 HIDDENITEM
-model.gex
+AdaptErrEst.map
 :8:1000
 hidden
 internal
-survivemeshadapt
+rebuild
 result
 0
 HIDDENITEM
-PP.fmm
+SolCoef_1(1).scl
+:8:1000
+hidden
+internal
+rebuild
+result
+0
+HIDDENITEM
+Port2_hInfo1.pmm
+:8:1000
+hidden
+internal
+rebuild
+result
+0
+HIDDENITEM
+Port2_eInfo1.pmm
+:8:1000
+hidden
+internal
+rebuild
+result
+0
+HIDDENITEM
+Port1_hInfo1.pmm
+:8:1000
+hidden
+internal
+rebuild
+result
+0
+HIDDENITEM
+Port1_eInfo1.pmm
+:8:1000
+hidden
+internal
+solverstart
+result
+0
+HIDDENITEM
+Model.mlg
 :8:1000
 visible
 internal
@@ -280,12 +208,38 @@ surviveparchange
 result
 P
 XYSIGNAL2
-time
-1D Results\Port signals\i1
-i1(1).sig
+user
+1D Results\Convergence\S-Parameter\Progression
+SErr.sig
 
-Time / ns
-Time Signals
+Calculation
+S-Parameter Interpolation Error Estimate
+:0:0
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+user
+1D Results\Materials\material1\Dispersive\Eps' (FD - Interpolated)
+material1_eps_re Frequency Domain.sig
+Eps'
+Frequency / GHz
+Electric Dispersion: Tangent Delta (Constant Fit)
+:0:0
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+user
+1D Results\Materials\material1\Dispersive\Eps'' (FD - Interpolated)
+material1_eps_im Frequency Domain.sig
+Eps''
+Frequency / GHz
+Electric Dispersion: Tangent Delta (Constant Fit)
 :8:1000
 visible
 internal
@@ -293,12 +247,12 @@ surviveparchange
 result
 P
 XYSIGNAL2
-time
-1D Results\Port signals\o1,1
-o1(1)1(1).sig
+user
+1D Results\Convergence\Portmodes\Progression
+KzK0Err.sig
 
-Time / ns
-Time Signals
+Port mesh refinement pass
+Propagation constant delta normalized by wave number in vacuum
 :8:1000
 visible
 internal
@@ -306,12 +260,168 @@ surviveparchange
 result
 P
 XYSIGNAL2
-time
-1D Results\Port signals\o2,1
-o2(1)1(1).sig
+user
+1D Results\Port Information\Beta\1(1)
+beta1(1).sig
 
-Time / ns
-Time Signals
+Frequency / GHz
+Beta in 1/m
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+user
+1D Results\Port Information\Line Impedance\1(1)
+zline1(1).sig
+
+Frequency / GHz
+Line Impedance in Ohms
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+user
+1D Results\Port Information\Effective Dielectric Constant\1(1)
+epseff1(1).sig
+
+Frequency / GHz
+Effective Dielectric Constant
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+user
+1D Results\Port Information\Beta\2(1)
+beta2(1).sig
+
+Frequency / GHz
+Beta in 1/m
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+user
+1D Results\Port Information\Line Impedance\2(1)
+zline2(1).sig
+
+Frequency / GHz
+Line Impedance in Ohms
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+user
+1D Results\Port Information\Effective Dielectric Constant\2(1)
+epseff2(1).sig
+
+Frequency / GHz
+Effective Dielectric Constant
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+user
+1D Results\Convergence\Equation System Solver\Relative Residual\[1]
+Residual_1(1).sig
+log10(Relative Residual Norm)
+Frequency / GHz
+Relative Residual Norm vs. Frequency
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+user
+1D Results\Convergence\Equation System Solver\Number of Iterations\[1]
+Iterations_1(1).sig
+Number of Iterations
+Frequency / GHz
+Number of Iterations vs. Frequency
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+user
+1D Results\Adaptive Meshing\f=70\Delta S
+amr(#0000)_deltasvsp.sig
+Delta S
+Passes
+Maximum Delta S versus Passes
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+user
+1D Results\Adaptive Meshing\f=70\Solvertime
+amr(#0000)_solvertimevsp.sig
+Solvertime
+Passes
+Time per Pass in Seconds versus Passes
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+user
+1D Results\Adaptive Meshing\f=70\Meshcells
+amr(#0000)_meshcellsvsp.sig
+Meshcells
+Passes
+Meshcells versus Passes
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+complex
+1D Results\Adaptive Meshing\f=70\S-Parameters\S1,1
+amr(#0000)_svsp1(1)_1(1).sig
+S-Parameters
+Passes
+S-Parameters versus Passes
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+complex
+1D Results\Adaptive Meshing\f=70\S-Parameters\S2,1
+amr(#0000)_svsp2(1)_1(1).sig
+S-Parameters
+Passes
+S-Parameters versus Passes
 :8:1000
 visible
 internal
@@ -359,8 +469,8 @@ result
 P
 XYSIGNAL2
 complex
-1D Results\Power\Excitation [1]\Power Stimulated
-StimulatedPower_1.sig
+1D Results\Power\Excitation [1]\Power Accepted per Port\Port 2
+AcceptedPower_2(1).sig
 W
 Frequency / GHz
 Power in Watt
@@ -385,63 +495,11 @@ result
 P
 XYSIGNAL2
 complex
-1D Results\Power\Excitation [1]\Power Accepted
-AcceptedPower_1.sig
+1D Results\Power\Excitation [1]\Loss in Metals
+cTotal_metal_loss(1).sig
 W
 Frequency / GHz
 Power in Watt
-:8:1000
-visible
-internal
-surviveparchange
-result
-P
-XYSIGNAL2
-complex
-1D Results\Power\Excitation [1]\Power Absorbed at all Ports
-AbsorbedPower_1.sig
-W
-Frequency / GHz
-Power in Watt
-:8:1000
-visible
-internal
-surviveparchange
-result
-P
-XYSIGNAL2
-complex
-1D Results\Power\Excitation [1]\Power Accepted per Port\Port 1
-AcceptedPower_1(1).sig
-W
-Frequency / GHz
-Power in Watt
-:8:1000
-visible
-internal
-surviveparchange
-result
-P
-XYSIGNAL2
-complex
-1D Results\Power\Excitation [1]\Power Accepted per Port\Port 2
-AcceptedPower_2(1).sig
-W
-Frequency / GHz
-Power in Watt
-:8:1000
-visible
-internal
-surviveparchange
-result
-P
-XYSIGNAL2
-energy
-1D Results\Energy\Energy [1]
-1.eng
-
-Time / ns
-Field Energy / dB
 :8:1000
 visible
 internal
@@ -475,22 +533,9 @@ surviveparchange
 result
 P
 XYSIGNAL2
-linear
-1D Results\VSWR\VSWR1
-vswr1(1).sig
-
-Frequency / GHz
-Voltage Standing Wave Ratio (VSWR)
-:8:1000
-visible
-internal
-surviveparchange
-result
-P
-XYSIGNAL2
 complex
-1D Results\Power\Excitation [1]\Power Radiated
-RadiatedPower_1.sig
+1D Results\Power\Excitation [1]\Power Stimulated
+StimulatedPower_1.sig
 W
 Frequency / GHz
 Power in Watt
@@ -502,11 +547,11 @@ result
 P
 XYSIGNAL2
 complex
-1D Results\Efficiencies\Rad. Efficiency [1]
-FarfieldMetaData_1_RadEff.sig
-
+1D Results\Power\Excitation [1]\Power Accepted
+AcceptedPower_1.sig
+W
 Frequency / GHz
-Radiation Efficiency
+Power in Watt
 :8:1000
 visible
 internal
@@ -515,11 +560,24 @@ result
 P
 XYSIGNAL2
 complex
-1D Results\Efficiencies\Tot. Efficiency [1]
-FarfieldMetaData_1_TotEff.sig
+1D Results\Power\Excitation [1]\Power Accepted per Port\Port 1
+AcceptedPower_1(1).sig
+W
+Frequency / GHz
+Power in Watt
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+linear
+1D Results\VSWR\VSWR1
+vswr1(1).sig
 
 Frequency / GHz
-Total Efficiency
+Voltage Standing Wave Ratio (VSWR)
 :8:1000
 visible
 internal
@@ -553,8 +611,8 @@ surviveparchange
 result
 0
 TABLE
-Tables\1D Results\S1,1dB
-S1,1dB.rt1|S1,1dB.rd1
+Tables\0D Results\S21 dB
+S21 dB.rt0|S21 dB.rd0
 :8:1000
 visible
 internal
@@ -562,8 +620,8 @@ surviveparchange
 result
 0
 TABLE
-Tables\1D Results\S2,1dB
-S2,1dB.rt1|S2,1dB.rd1
+Tables\0D Results\S21 Phi
+S21 Phi.rt0|S21 Phi.rd0
 :8:1000
 visible
 internal
@@ -571,17 +629,8 @@ surviveparchange
 result
 0
 TABLE
-Tables\0D Results\S1,1dB_0D_yAtX
-S1,1dB_0D_yAtX.rt0|S1,1dB_0D_yAtX.rd0
-:8:1000
-visible
-internal
-surviveparchange
-result
-0
-TABLE
-Tables\0D Results\S2,1dB_0D_yAtX
-S2,1dB_0D_yAtX.rt0|S2,1dB_0D_yAtX.rd0
+Tables\0D Results\S11 dB
+S11 dB.rt0|S11 dB.rd0
 High Frequency:0:0
 visible
 internal
@@ -634,7 +683,7 @@ signal_default_lf.sig
 
 Time / ns
 Excitation: default
-High Frequency:0:0
+High Frequency:0:2
 visible
 internal
 persistent
@@ -653,190 +702,79 @@ internal
 rebuild
 result
 0
-MODE
+XYSIGNAL2
+user
+1D Results\Convergence\S-Parameter\Progression
+SErr.sig
+
+Calculation
+S-Parameter Interpolation Error Estimate
+:8:1000
+visible
+internal
+rebuild
+result
+0
+MODEMAP
 2D/3D Results\Port Modes\Port1\e1
-Port1_e1.prt
-
+Port1_e1.pmm
+Port1 e1
 :8:1000
 visible
 internal
 rebuild
 result
 0
-MODE
+MODEMAP
 2D/3D Results\Port Modes\Port1\h1
-Port1_h1.prt
-
+Port1_h1.pmm
+Port1 h1
 :8:1000
 visible
 internal
 rebuild
 result
 0
-MODE
+MODEMAP
 2D/3D Results\Port Modes\Port2\e1
-Port2_e1.prt
-
+Port2_e1.pmm
+Port2 e1
 :8:1000
 visible
 internal
 rebuild
 result
 0
-MODE
+MODEMAP
 2D/3D Results\Port Modes\Port2\h1
-Port2_h1.prt
-
-:8:1000
+Port2_h1.pmm
+Port2 h1
+:0:0
 visible
 internal
 rebuild
 result
 0
-POWERLOSS3D
-2D/3D Results\Power Loss Dens.\loss (f=70) [1]
-loss (f=70)_1,1.m3d
-loss (f=70) [1]
-:8:1000
+XYSIGNAL2
+user
+1D Results\Materials\material1\Dispersive\Eps' (FD - Interpolated)
+material1_eps_re Frequency Domain.sig
+Eps'
+Frequency / GHz
+Electric Dispersion: Tangent Delta (Constant Fit)
+:0:0
 visible
 internal
 rebuild
 result
 0
-PFIELD3D
-2D/3D Results\Power Flow\power (f=70) [1]
-power (f=70)_1,1.m3d
-power (f=70) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-HFIELD3D
-2D/3D Results\H-Field\h-field (f=70) [1]
-h-field (f=70)_1,1.m3d
-h-field (f=70) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-SURFACECURRENT
-2D/3D Results\Surface Current\surface current (f=70) [1]
-h-field (f=70)_1,1.m3d
-surface current (f=70) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-EFIELD3D
-2D/3D Results\E-Field\e-field (f=70) [1]
-e-field (f=70)_1,1.m3d
-e-field (f=70) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-POWERLOSS3D
-2D/3D Results\Power Loss Dens.\loss (f=60) [1]
-loss (f=60)_1,1.m3d
-loss (f=60) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-PFIELD3D
-2D/3D Results\Power Flow\power (f=60) [1]
-power (f=60)_1,1.m3d
-power (f=60) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-HFIELD3D
-2D/3D Results\H-Field\h-field (f=60) [1]
-h-field (f=60)_1,1.m3d
-h-field (f=60) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-SURFACECURRENT
-2D/3D Results\Surface Current\surface current (f=60) [1]
-h-field (f=60)_1,1.m3d
-surface current (f=60) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-EFIELD3D
-2D/3D Results\E-Field\e-field (f=60) [1]
-e-field (f=60)_1,1.m3d
-e-field (f=60) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-POWERLOSS3D
-2D/3D Results\Power Loss Dens.\loss (f=50) [1]
-loss (f=50)_1,1.m3d
-loss (f=50) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-PFIELD3D
-2D/3D Results\Power Flow\power (f=50) [1]
-power (f=50)_1,1.m3d
-power (f=50) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-HFIELD3D
-2D/3D Results\H-Field\h-field (f=50) [1]
-h-field (f=50)_1,1.m3d
-h-field (f=50) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-SURFACECURRENT
-2D/3D Results\Surface Current\surface current (f=50) [1]
-h-field (f=50)_1,1.m3d
-surface current (f=50) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-EFIELD3D
-2D/3D Results\E-Field\e-field (f=50) [1]
-e-field (f=50)_1,1.m3d
-e-field (f=50) [1]
+XYSIGNAL2
+user
+1D Results\Materials\material1\Dispersive\Eps'' (FD - Interpolated)
+material1_eps_im Frequency Domain.sig
+Eps''
+Frequency / GHz
+Electric Dispersion: Tangent Delta (Constant Fit)
 :8:1000
 visible
 internal
@@ -844,12 +782,12 @@ rebuild
 result
 0
 XYSIGNAL2
-time
-1D Results\Port signals\i1
-i1(1).sig
+user
+1D Results\Convergence\Portmodes\Progression
+KzK0Err.sig
 
-Time / ns
-Time Signals
+Port mesh refinement pass
+Propagation constant delta normalized by wave number in vacuum
 :8:1000
 visible
 internal
@@ -857,12 +795,12 @@ rebuild
 result
 0
 XYSIGNAL2
-time
-1D Results\Port signals\o1,1
-o1(1)1(1).sig
+user
+1D Results\Port Information\Beta\1(1)
+beta1(1).sig
 
-Time / ns
-Time Signals
+Frequency / GHz
+Beta in 1/m
 :8:1000
 visible
 internal
@@ -870,12 +808,155 @@ rebuild
 result
 0
 XYSIGNAL2
-time
-1D Results\Port signals\o2,1
-o2(1)1(1).sig
+user
+1D Results\Port Information\Line Impedance\1(1)
+zline1(1).sig
 
-Time / ns
-Time Signals
+Frequency / GHz
+Line Impedance in Ohms
+:8:1000
+visible
+internal
+rebuild
+result
+0
+XYSIGNAL2
+user
+1D Results\Port Information\Effective Dielectric Constant\1(1)
+epseff1(1).sig
+
+Frequency / GHz
+Effective Dielectric Constant
+:8:1000
+visible
+internal
+rebuild
+result
+0
+XYSIGNAL2
+user
+1D Results\Port Information\Beta\2(1)
+beta2(1).sig
+
+Frequency / GHz
+Beta in 1/m
+:8:1000
+visible
+internal
+rebuild
+result
+0
+XYSIGNAL2
+user
+1D Results\Port Information\Line Impedance\2(1)
+zline2(1).sig
+
+Frequency / GHz
+Line Impedance in Ohms
+:8:1000
+visible
+internal
+rebuild
+result
+0
+XYSIGNAL2
+user
+1D Results\Port Information\Effective Dielectric Constant\2(1)
+epseff2(1).sig
+
+Frequency / GHz
+Effective Dielectric Constant
+:8:1000
+visible
+internal
+rebuild
+result
+0
+XYSIGNAL2
+user
+1D Results\Convergence\Equation System Solver\Relative Residual\[1]
+Residual_1(1).sig
+log10(Relative Residual Norm)
+Frequency / GHz
+Relative Residual Norm vs. Frequency
+:8:1000
+visible
+internal
+rebuild
+result
+0
+XYSIGNAL2
+user
+1D Results\Convergence\Equation System Solver\Number of Iterations\[1]
+Iterations_1(1).sig
+Number of Iterations
+Frequency / GHz
+Number of Iterations vs. Frequency
+:8:1000
+visible
+internal
+survivemeshadapt
+result
+0
+XYSIGNAL2
+user
+1D Results\Adaptive Meshing\f=70\Delta S
+amr(#0000)_deltasvsp.sig
+Delta S
+Passes
+Maximum Delta S versus Passes
+:8:1000
+visible
+internal
+survivemeshadapt
+result
+0
+XYSIGNAL2
+user
+1D Results\Adaptive Meshing\f=70\Solvertime
+amr(#0000)_solvertimevsp.sig
+Solvertime
+Passes
+Time per Pass in Seconds versus Passes
+:8:1000
+visible
+internal
+survivemeshadapt
+result
+0
+XYSIGNAL2
+user
+1D Results\Adaptive Meshing\f=70\Meshcells
+amr(#0000)_meshcellsvsp.sig
+Meshcells
+Passes
+Meshcells versus Passes
+:8:1000
+visible
+internal
+survivemeshadapt
+result
+0
+XYSIGNAL2
+complex
+1D Results\Adaptive Meshing\f=70\S-Parameters\S1,1
+amr(#0000)_svsp1(1)_1(1).sig
+S-Parameters
+Passes
+S-Parameters versus Passes
+:8:1000
+visible
+internal
+survivemeshadapt
+result
+0
+XYSIGNAL2
+complex
+1D Results\Adaptive Meshing\f=70\S-Parameters\S2,1
+amr(#0000)_svsp2(1)_1(1).sig
+S-Parameters
+Passes
+S-Parameters versus Passes
 :8:1000
 visible
 internal
@@ -923,47 +1004,8 @@ result
 0
 XYSIGNAL2
 complex
-1D Results\Power\Excitation [1]\Power Stimulated
-StimulatedPower_1.sig
-W
-Frequency / GHz
-Power in Watt
-:8:1000
-visible
-internal
-rebuild
-result
-0
-XYSIGNAL2
-complex
-1D Results\Power\Excitation [1]\Power Outgoing all Ports
-ReflectedPower_1.sig
-W
-Frequency / GHz
-Power in Watt
-:8:1000
-visible
-internal
-rebuild
-result
-0
-XYSIGNAL2
-complex
-1D Results\Power\Excitation [1]\Power Accepted
-AcceptedPower_1.sig
-W
-Frequency / GHz
-Power in Watt
-:8:1000
-visible
-internal
-rebuild
-result
-0
-XYSIGNAL2
-complex
-1D Results\Power\Excitation [1]\Power Absorbed at all Ports
-AbsorbedPower_1.sig
+1D Results\Power\Excitation [1]\Loss in Metals
+cTotal_metal_loss(1).sig
 W
 Frequency / GHz
 Power in Watt
@@ -1000,12 +1042,25 @@ rebuild
 result
 0
 XYSIGNAL2
-energy
-1D Results\Energy\Energy [1]
-1.eng
-
-Time / ns
-Field Energy / dB
+complex
+1D Results\Power\Excitation [1]\Power Accepted
+AcceptedPower_1.sig
+W
+Frequency / GHz
+Power in Watt
+:8:1000
+visible
+internal
+rebuild
+result
+0
+XYSIGNAL2
+complex
+1D Results\Power\Excitation [1]\Power Outgoing all Ports
+ReflectedPower_1.sig
+W
+Frequency / GHz
+Power in Watt
 :8:1000
 visible
 internal
@@ -1016,6 +1071,19 @@ XYSIGNAL2
 complex
 1D Results\Power\Excitation [1]\Loss per Material\Volume loss in material1
 cVolume_loss_in_material1(1).sig
+W
+Frequency / GHz
+Power in Watt
+:8:1000
+visible
+internal
+rebuild
+result
+0
+XYSIGNAL2
+complex
+1D Results\Power\Excitation [1]\Power Stimulated
+StimulatedPower_1.sig
 W
 Frequency / GHz
 Power in Watt
@@ -1038,36 +1106,6 @@ internal
 rebuild
 result
 0
-FARFIELD
-Farfields\farfield (f=50) [1]
-farfield (f=50)_1.ffm
-farfield (f=50) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-FARFIELD
-Farfields\farfield (f=60) [1]
-farfield (f=60)_1.ffm
-farfield (f=60) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
-FARFIELD
-Farfields\farfield (f=70) [1]
-farfield (f=70)_1.ffm
-farfield (f=70) [1]
-:8:1000
-visible
-internal
-rebuild
-result
-0
 XYSIGNAL2
 linear
 1D Results\VSWR\VSWR1
@@ -1075,68 +1113,3 @@ vswr1(1).sig
 
 Frequency / GHz
 Voltage Standing Wave Ratio (VSWR)
-:8:1000
-visible
-internal
-rebuild
-result
-0
-XYSIGNAL2
-complex
-1D Results\Power\Excitation [1]\Power Radiated
-RadiatedPower_1.sig
-W
-Frequency / GHz
-Power in Watt
-:8:1000
-visible
-internal
-rebuild
-result
-0
-XYSIGNAL2
-complex
-1D Results\Efficiencies\Rad. Efficiency [1]
-FarfieldMetaData_1_RadEff.sig
-
-Frequency / GHz
-Radiation Efficiency
-:8:1000
-visible
-internal
-rebuild
-result
-0
-XYSIGNAL2
-complex
-1D Results\Efficiencies\Tot. Efficiency [1]
-FarfieldMetaData_1_TotEff.sig
-
-Frequency / GHz
-Total Efficiency
-:8:1000
-visible
-internal
-rebuild
-result
-0
-XYSIGNAL2
-complex
-1D Results\Reference Impedance\ZRef 1(1)
-ZRef1(1).sig
-
-Frequency / GHz
-Impedance in Ohm
-:8:1000
-visible
-internal
-rebuild
-result
-0
-XYSIGNAL2
-complex
-1D Results\Reference Impedance\ZRef 2(1)
-ZRef2(1).sig
-
-Frequency / GHz
-Impedance in Ohm

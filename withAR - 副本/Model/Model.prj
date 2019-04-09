@@ -3,17 +3,17 @@
 [Author]
 Administrator
 [Mesh Cells]
-7,056
+11,215
 [Mesh Type]
-Hexahedral
+Tetrahedral
 [Last Problem Type]
 High Frequency
 [Last Solver Type]
-HF Time Domain
+HF Frequency Domain
 [Last Solver Type Abb]
-t
+f
 [Results]
-Time Domain: S-Parameter
+Frequency Domain: S-Parameter
 [Modeler Unique ID]
-5:withar - 副本.cst?7b537aa41035cd19164c086c62a5b6c8?18795:numberofparameters=1:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::length
+5:withar - 副本.cst?05a59c9ae2190292a42d4bfe16354f33?23280:numberofparameters=6:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::y1?y0?ht?x1?x0?length
 [Comment]

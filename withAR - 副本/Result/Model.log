@@ -1,147 +1,9 @@
-*** Warning ***
-
-Multiple closed boundaries detected.These boundaries are ignored by the
-farfield calculation.Please note that the farfield might be misleading.
-
---------------------------------------------------------------------------------
-Build version: 2015.0 Release from 2015-01-16 (change 344899)
-
-Starting adaptive port meshing.
+Some ports are defined on (and therefore replace) open boundaries. Note that
+higher order modes will not be absorbed unless you increase the number of modes
+at these ports.
 
 --------------------------------------------------------------------------------
-Mode calculation for port 1:
-
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
-Number of mesh faces filled with PEC due to fill limit restrictions: 0
-
---------------------------------------------------------------------------------
-Port mode solver: Detected dispersive material(s) at port 1. 
-Using a constant approximation of dispersive material(s) at 60GHz and
-neglecting loss terms. 
-
---------------------------------------------------------------------------------
-  -------------------------------- F-Calc 60 ---------------------------------
-  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-  1      1      QTEM        232           0             214           ---
-  ----------------------------------------------------------------------------
-
-*** Warning ***
-
-Some higher order propagating modes at port 1 are not considered in time domain
-calculation. This possibly leads to an inaccurate energy balance. Consider to
-increase the number of modes or decrease the upper frequency limit. More...
-
---------------------------------------------------------------------------------
-Pass 1 successfully completed. 
-
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
-Number of mesh faces filled with PEC due to fill limit restrictions: 0
-
---------------------------------------------------------------------------------
-  -------------------------------- F-Calc 60 ---------------------------------
-  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-  1      1      QTEM        235           2.3           214           ---
-  ----------------------------------------------------------------------------
-
-Pass 2 successfully completed. Delta (Line Imp.): 0.206593%
-
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
-Number of mesh faces filled with PEC due to fill limit restrictions: 0
-
---------------------------------------------------------------------------------
-  -------------------------------- F-Calc 60 ---------------------------------
-  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-  1      1      QTEM        236           2.2           214           ---
-  ----------------------------------------------------------------------------
-
-Pass 3 successfully completed. Delta (Line Imp.): 0.133826%
-Mode calculation for port 2:
-
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
-Number of mesh faces filled with PEC due to fill limit restrictions: 0
-
---------------------------------------------------------------------------------
-Port mode solver: Detected dispersive material(s) at port 2. 
-Using a constant approximation of dispersive material(s) at 60GHz and
-neglecting loss terms. 
-
---------------------------------------------------------------------------------
-  -------------------------------- F-Calc 60 ---------------------------------
-  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-  2      1      QTEM        232           0             214           ---
-  ----------------------------------------------------------------------------
-
-*** Warning ***
-
-Some higher order propagating modes at port 2 are not considered in time domain
-calculation. This possibly leads to an inaccurate energy balance. Consider to
-increase the number of modes or decrease the upper frequency limit. More...
-
---------------------------------------------------------------------------------
-Pass 1 successfully completed. 
-
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
-Number of mesh faces filled with PEC due to fill limit restrictions: 0
-
---------------------------------------------------------------------------------
-  -------------------------------- F-Calc 60 ---------------------------------
-  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-  2      1      QTEM        235           2.3           214           ---
-  ----------------------------------------------------------------------------
-
-Pass 2 successfully completed. Delta (Line Imp.): 0.206593%
-
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
-Number of mesh faces filled with PEC due to fill limit restrictions: 0
-
---------------------------------------------------------------------------------
-  -------------------------------- F-Calc 60 ---------------------------------
-  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-  2      1      QTEM        236           2.2           214           ---
-  ----------------------------------------------------------------------------
-
-Pass 3 successfully completed. Delta (Line Imp.): 0.133826%
-Adaptive port meshing finished. 
-
---------------------------------------------------------------------------------
-*** Warning ***
-
-Multiple closed boundaries detected.These boundaries are ignored by the
-farfield calculation.Please note that the farfield might be misleading.
-
---------------------------------------------------------------------------------
-
-Solver started at: 11:12 AM Thursday, 28. March 2019
-
-  Module:  Time Domain: S-Parameter (Win 64)
-  Version: 2015.0 Release from 2015-01-16 (change 344899)
-
-
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
-======================================================================
- Solver cycle: 1
-======================================================================
-
-Stimulation at port 1 (mode 1) 
-
+Number of threads used: 2.
 
 --------------------------------------------------------------------------------
 Units settings: 
@@ -149,24 +11,6 @@ Units settings:
   Dimensions: mm
   Frequency:  GHz
   Time:       ns
-
---------------------------------------------------------------------------------
-Number of mesh faces filled with PEC due to fill limit restrictions: 0
-
---------------------------------------------------------------------------------
-Mesh statistics:
-
-   Hexahedral mesh type: FPBA [accuracy enhancement is enabled]
-
-   Parallelization type: domain decomposition
-      Number of parallel working threads: 1
-      Number of calculation domains used: 1
-
-
---------------------------------------------------------------------------------
-Port mode solver: Detected dispersive material(s) at port 1, 2. 
-Using a constant approximation of dispersive material(s) at 60GHz and
-neglecting loss terms. 
 
 --------------------------------------------------------------------------------
 Boundary conditions: 
@@ -181,115 +25,303 @@ Boundary conditions:
   Ymin: electric
   Ymax: electric
 
-  Zmin: open, 4 Layer, depth 0.95 mm
-  Zmax: open, 4 Layer, depth 0.95 mm
-
-  PML-Type: Convolution PML
+  Zmin: expanded open
+  Zmax: expanded open
 
 --------------------------------------------------------------------------------
-Frequency settings: 
+Order settings: 
 
-  Fmin:    50
-  Fmax:    70
-  Nfsteps: 1001
+  Solver order   : 2nd (constant)
+  Curved elements: up to order 3 (automatic)
 
 --------------------------------------------------------------------------------
-Waveguide boundaries:
+  Mesh time                :	4 s
 
-Port: 1
+--------------------------------------------------------------------------------
 
-  -------------------------------- F-Calc 60 ---------------------------------
-  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-  1      1      QTEM        232           0             214           ---
-  ----------------------------------------------------------------------------
+================================================================================
+Frequency Domain Solver calculation cycle started
 
-Port: 2
+--------------------------------------------------------------------------------
+Solver started at: 09:29 PM Thursday, 28. March 2019
 
-  -------------------------------- F-Calc 60 ---------------------------------
-  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
-  2      1      QTEM        232           0             214           ---
-  ----------------------------------------------------------------------------
+  Module:  Frequency Domain: S-Parameter (Win 64)
+  Version: 2015.0 Release from 2015-01-16 (change 344899)
 
-*** Warning ***
-
-Some higher order propagating modes at port 1 are not considered in time domain
-calculation. This possibly leads to an inaccurate energy balance. Consider to
-increase the number of modes or decrease the upper frequency limit. More...
+--------------------------------------------------------------------------------
+  Calculation 1 of 1 (Frequency: 70 GHz)
 
 --------------------------------------------------------------------------------
 *** Warning ***
 
-Some higher order propagating modes at port 2 are not considered in time domain
-calculation. This possibly leads to an inaccurate energy balance. Consider to
-increase the number of modes or decrease the upper frequency limit. More...
+At least one propagating mode is not considered at port 1. 
 
 --------------------------------------------------------------------------------
-Field update statistics:
+*** Warning ***
 
-  Number of components in total: 	46369
-  Number of disp. elements:		22193
+At least one propagating mode is not considered at port 2. 
 
-Subcycling state:      Automatically deactivated
+--------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TEM         377           0             377           0.0
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      TEM         377           0             377           0.0
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Adaptive mesh refinement pass 1
+
+--------------------------------------------------------------------------------
+  Matrix setup time        :	1 s
+  Degrees of freedom       :	40120
+  Number of mesh cells     :	6326
+
+  Stimulation port         :	1
+  Mode number              :	1
+  Accuracy                 :	8.6067e-005
+  Iterations               :	10
+  Solver time              :	0 s
+
+--------------------------------------------------------------------------------
+71% of all mesh edges seem to be longer than expected. The adaptive mesh
+refinement's growth limitation will therefore use 24423 instead of 6204 mesh
+cells as a reference.
+
+--------------------------------------------------------------------------------
+Adaptive mesh refinement pass 2
+
+--------------------------------------------------------------------------------
+  Matrix setup time        :	0 s
+  Degrees of freedom       :	49004
+  Number of mesh cells     :	7704
+
+  Stimulation port         :	1
+  Mode number              :	1
+  Accuracy                 :	7.90474e-005
+  Iterations               :	7
+  Solver time              :	1 s
+
+--------------------------------------------------------------------------------
+Delta S (pass 2) = 0.000897139
+
+--------------------------------------------------------------------------------
+Adaptive mesh refinement pass 3
+
+--------------------------------------------------------------------------------
+  Matrix setup time        :	1 s
+  Solver setup             :	1 s
+  Degrees of freedom       :	71650
+  Number of mesh cells     :	11215
+
+  Stimulation port         :	1
+  Mode number              :	1
+  Accuracy                 :	8.09385e-005
+  Iterations               :	7
+  Solver time              :	1 s
+
+--------------------------------------------------------------------------------
+Delta S (pass 3) = 0.00082183
+
+--------------------------------------------------------------------------------
+Mesh adaptation terminated because the desired accuracy limit is reached.
+
+--------------------------------------------------------------------------------
+  Total time               :	11 s
 
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
+  Calculation 2 (Frequency: 50 GHz)
 
 --------------------------------------------------------------------------------
-Steady state energy criterion met, solver finished successfully.
+  ----------------------------------------------------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TEM         377           0             377           0.0
+  ----------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
-Frequency domain results normalized to default signal.
+  ----------------------------------------------------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      TEM         377           0             377           0.0
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  Matrix setup time        :	0 s
+  Solver setup             :	1 s
+  Degrees of freedom       :	71650
+  Number of mesh cells     :	11215
+
+  Stimulation port         :	1
+  Mode number              :	1
+  Accuracy                 :	6.39849e-005
+  Iterations               :	7
+  Solver time              :	1 s
+
+--------------------------------------------------------------------------------
+  Total time               :	2 s
 
 --------------------------------------------------------------------------------
 
+--------------------------------------------------------------------------------
+  Calculation 3 (Frequency: 60 GHz)
+
+--------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TEM         377           0             0             0.0
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      TEM         377           0             0             0.0
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  Matrix setup time        :	1 s
+  Degrees of freedom       :	71650
+  Number of mesh cells     :	11215
+
+  Stimulation port         :	1
+  Mode number              :	1
+  Accuracy                 :	9.21137e-005
+  Iterations               :	7
+  Solver time              :	1 s
+
+--------------------------------------------------------------------------------
+  Total time               :	2 s
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  Calculation 4 (Frequency: 65 GHz)
+
+--------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TEM         377           0             0             0.0
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      TEM         377           0             0             0.0
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  Matrix setup time        :	1 s
+  Solver setup             :	1 s
+  Degrees of freedom       :	71650
+  Number of mesh cells     :	11215
+
+  Stimulation port         :	1
+  Mode number              :	1
+  Accuracy                 :	8.78469e-005
+  Iterations               :	10
+  Solver time              :	0 s
+
+--------------------------------------------------------------------------------
+  Total time               :	2 s
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  Calculation 5 (Frequency: 54.8 GHz)
+
+--------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TEM         377           0             0             0.0
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      TEM         377           0             0             0.0
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  Matrix setup time        :	0 s
+  Solver setup             :	1 s
+  Degrees of freedom       :	71650
+  Number of mesh cells     :	11215
+
+  Stimulation port         :	1
+  Mode number              :	1
+  Accuracy                 :	9.68325e-005
+  Iterations               :	6
+  Solver time              :	0 s
+
+--------------------------------------------------------------------------------
+  Generating results       :	1 s
+
+  Total time               :	2 s
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  Calculation 6 (Frequency: 68.14 GHz)
+
+--------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TEM         377           0             0             0.0
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      TEM         377           0             0             0.0
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+  Matrix setup time        :	0 s
+  Solver setup             :	1 s
+  Degrees of freedom       :	71650
+  Number of mesh cells     :	11215
+
+  Stimulation port         :	1
+  Mode number              :	1
+  Accuracy                 :	8.51234e-005
+  Iterations               :	9
+  Solver time              :	1 s
+
+--------------------------------------------------------------------------------
+  Total time               :	2 s
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+The S-parameter convergence criterion has been satisfied after
+calculating 6 frequency samples:
+
+  S-parameter error threshold value : 0.01
+  Number of error criterion checks  : 2
+  Minimum number of samples         : 3
+  S-parameters considered for sweep : All
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Solver has been aborted.
+
+--------------------------------------------------------------------------------
   ----------------------------------------------------------------------------
                       Peak memory used (kB)         Free physical memory (kB) 
                                                     At begin     Minimum      
   ----------------------------------------------------------------------------
-  Matrices calc.      46828                         7831000      6752440      
-  Solver run total    74944                         8052952      8004084      
+  Solver start        16392                         1441636      1441348      
+  Eq. system setup    136808                        1441812      1371096      
+  Eq. system solve    137016                        1417116      1318164      
+  Mesh refinement     105292                        1406984      1404404      
+  Solver run total    137016                        1441636      1318164      
+
+  Computer name       LAPTOP-PB2LA5RU
   ----------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
-Solver Statistics:
-
-  Hardware:
-     Computer name:                 	HZW19144646 
-
-     Number of CPU threads:             4
-     hardware info:                  	hardware acceleration not activated
-
-  Number of mesh cells:             	7056
-  Excitation duration:              	3.55454875e-001 ns 
-  Calculation time for excitation:  	0      	s
-  Number of calculated pulse widths:	1.04345 
-  Steady state accuracy limit:      	-30	dB 
-  Simulated number of time steps:   	852    
-  Maximum number of time steps:     	16330  
-  Time step width:
-     without subcycles:             	4.35328783e-004 ns
-     used:                          	4.35328783e-004 ns
-
-  Matrix calculation time:          	2      	s
-  Solver setup time:                	1      	s
-  Solver loop time:                 	0      	s
-  Solver post processing time:      	1      	s
-                                    	------------
-  Total solver time:                	4      	s
-
---------------------------------------------------------------------------------
-
-  Adaptive port meshing time:       	11     	s
-  Total solver time (all cycles):   	4      	s
-                                    	------------
-  Total simulation time:            	15     	s
-
---------------------------------------------------------------------------------
-Solver finished at: 11:12 AM Thursday, 28. March 2019
-
-
---------------------------------------------------------------------------------
-Creating parametric 1D results.
 
 --------------------------------------------------------------------------------
