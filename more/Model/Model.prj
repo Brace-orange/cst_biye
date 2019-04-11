@@ -5,15 +5,13 @@ Administrator
 [Mesh Cells]
 
 [Mesh Type]
-Tetrahedral
+Hexahedral
 [Last Problem Type]
 High Frequency
 [Last Solver Type]
-HF Frequency Domain
+HF Time Domain
 [Last Solver Type Abb]
-f
+t
 [Results]
 Unavailable
-[Modeler Unique ID]
-5:more.cst?605cec676083870bd99f38e689a1067c?27168:numberofparameters=1:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::length
 [Comment]

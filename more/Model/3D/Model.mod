@@ -223,9 +223,9 @@ With Brick
      .Name "withAR" 
      .Component "component1" 
      .Material "material1" 
-     .Xrange "0", "2.5" 
-     .Yrange "0", "2.5" 
-     .Zrange "0", "length" 
+     .Xrange "0", "1*x" 
+     .Yrange "0", "1*x" 
+     .Zrange "0", "center0" 
      .Create
 End With
 
@@ -305,9 +305,9 @@ With Brick
      .Name "hole" 
      .Component "component1" 
      .Material "hole" 
-     .Xrange "0.3", "2.1" 
-     .Yrange "0.3", "2.1" 
-     .Zrange "0", "0.95" 
+     .Xrange "(x-m)/2", "(x-m)/2+m" 
+     .Yrange "(x-m)/2", "(x-m)/2+m" 
+     .Zrange "center0-n", "center0" 
      .Create
 End With
 
@@ -343,11 +343,12 @@ With Brick
      .Name "solid1" 
      .Component "component1" 
      .Material "hole" 
-     .Xrange "0.3", "2.1" 
-     .Yrange "0.3", "2.1" 
-     .Zrange "length-0.95", "length" 
+     .Xrange "(x-m)/2", "(x-m)/2+m" 
+     .Yrange "(x-m)/2", "(x-m)/2+m" 
+     .Zrange "0", "n" 
      .Create
 End With
+
 
 '@ pick face
 
@@ -724,558 +725,750 @@ With Material
      .ChangeBackgroundMaterial
 End With
 
-'@ define port: 1
+'@ rename block: component1:withAR to: component1:center
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With Port 
+Solid.Rename "component1:withAR", "center"
+
+
+'@ define brick: component1:solid1
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
      .Reset 
-     .PortNumber "1" 
-     .Label "" 
-     .NumberOfModes "1" 
-     .AdjustPolarization "False" 
-     .PolarizationAngle "0.0" 
-     .ReferencePlaneDistance "0" 
-     .TextSize "50" 
-     .Coordinates "Full" 
-     .Orientation "zmin" 
-     .PortOnBound "True" 
-     .ClipPickedPortToBound "False" 
-     .Xrange "0", "2.5" 
-     .Yrange "0", "2.5" 
-     .Zrange "-1.2491352416667", "-1.2491352416667" 
-     .XrangeAdd "0.0", "0.0" 
-     .YrangeAdd "0.0", "0.0" 
-     .ZrangeAdd "0.0", "0.0" 
-     .SingleEnded "False" 
-     .Create 
+     .Name "solid1" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "x", "2*x" 
+     .Yrange "0", "x" 
+     .Zrange "0", "r1" 
+     .Create
 End With
 
-'@ define port: 2
+
+'@ define brick: component1:solid2
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With Port 
+With Brick
      .Reset 
-     .PortNumber "2" 
-     .Label "" 
-     .NumberOfModes "1" 
-     .AdjustPolarization "False" 
-     .PolarizationAngle "0.0" 
-     .ReferencePlaneDistance "0" 
-     .TextSize "50" 
-     .Coordinates "Full" 
-     .Orientation "zmax" 
-     .PortOnBound "True" 
-     .ClipPickedPortToBound "False" 
-     .Xrange "0", "2.5" 
-     .Yrange "0", "2.5" 
-     .Zrange "14.249135241667", "14.249135241667" 
-     .XrangeAdd "0.0", "0.0" 
-     .YrangeAdd "0.0", "0.0" 
-     .ZrangeAdd "0.0", "0.0" 
-     .SingleEnded "False" 
-     .Create 
+     .Name "solid2" 
+     .Component "component1" 
+     .Material "hole" 
+     .Xrange "x+(x-m)/2", "x+(x-m)/2+m" 
+     .Yrange "(x-m)/2", "(x-m)/2+m" 
+     .Zrange "r1-n", "r1" 
+     .Create
 End With
 
-'@ delete port: port1
+
+'@ boolean subtract shapes: component1:solid1, component1:solid2
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Port.Delete "1"
+Solid.Subtract "component1:solid1", "component1:solid2" 
 
-'@ delete port: port2
-
-'[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Port.Delete "2"
-
-'@ define port: 2
+'@ define brick: component1:solid2
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With Port 
+With Brick
      .Reset 
-     .PortNumber "2" 
-     .Label "" 
-     .NumberOfModes "1" 
-     .AdjustPolarization "False" 
-     .PolarizationAngle "0.0" 
-     .ReferencePlaneDistance "0" 
-     .TextSize "50" 
-     .Coordinates "Full" 
-     .Orientation "zmin" 
-     .PortOnBound "True" 
-     .ClipPickedPortToBound "False" 
-     .Xrange "0", "2.5" 
-     .Yrange "0", "2.5" 
-     .Zrange "-1.2491352416667", "-1.2491352416667" 
-     .XrangeAdd "0.0", "0.0" 
-     .YrangeAdd "0.0", "0.0" 
-     .ZrangeAdd "0.0", "0.0" 
-     .SingleEnded "False" 
-     .Create 
+     .Name "solid2" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "x+(x-m)/2", "x+(x-m)/2+m" 
+     .Yrange "(x-m)/2", "(x-m)/2+m" 
+     .Zrange "0", "n" 
+     .Create
 End With
 
-'@ define port: 1
+
+'@ boolean subtract shapes: component1:solid1, component1:solid2
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With Port 
+Solid.Subtract "component1:solid1", "component1:solid2" 
+
+'@ define brick: component1:solid2
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
      .Reset 
-     .PortNumber "1" 
-     .Label "" 
-     .NumberOfModes "1" 
-     .AdjustPolarization "False" 
-     .PolarizationAngle "0.0" 
-     .ReferencePlaneDistance "0" 
-     .TextSize "50" 
-     .Coordinates "Full" 
-     .Orientation "zmax" 
-     .PortOnBound "True" 
-     .ClipPickedPortToBound "False" 
-     .Xrange "0", "2.5" 
-     .Yrange "0", "2.5" 
-     .Zrange "14.249135241667", "14.249135241667" 
-     .XrangeAdd "0.0", "0.0" 
-     .YrangeAdd "0.0", "0.0" 
-     .ZrangeAdd "0.0", "0.0" 
-     .SingleEnded "False" 
-     .Create 
+     .Name "solid2" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "2*x", "3*x" 
+     .Yrange "0", "x" 
+     .Zrange "0", "r2" 
+     .Create
 End With
 
-'@ edit parsweep parameter: Sequence 2:length
+
+'@ define brick: component1:solid3
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With ParameterSweep
-     .DeleteParameter "Sequence 2", "length" 
-     .AddParameter_Stepwidth "Sequence 2", "length", "2", "12", "1" 
-End With
-
-'@ define boundaries
-
-'[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With Boundary
-     .Xmin "magnetic" 
-     .Xmax "magnetic" 
-     .Ymin "electric" 
-     .Ymax "electric" 
-     .Zmin "expanded open" 
-     .Zmax "expanded open" 
-     .Xsymmetry "none" 
-     .Ysymmetry "none" 
-     .Zsymmetry "none" 
-     .XminThermal "isothermal" 
-     .XmaxThermal "isothermal" 
-     .YminThermal "isothermal" 
-     .YmaxThermal "isothermal" 
-     .ZminThermal "isothermal" 
-     .ZmaxThermal "isothermal" 
-     .XsymmetryThermal "none" 
-     .YsymmetryThermal "none" 
-     .ZsymmetryThermal "none" 
-     .ApplyInAllDirections "False" 
-     .ApplyInAllDirectionsThermal "False" 
-     .XminTemperature "" 
-     .XminTemperatureType "None" 
-     .XmaxTemperature "" 
-     .XmaxTemperatureType "None" 
-     .YminTemperature "" 
-     .YminTemperatureType "None" 
-     .YmaxTemperature "" 
-     .YmaxTemperatureType "None" 
-     .ZminTemperature "" 
-     .ZminTemperatureType "None" 
-     .ZmaxTemperature "" 
-     .ZmaxTemperatureType "None" 
-End With
-
-'@ change solver type
-
-'[VERSION]2015.0|24.0.2|20150116[/VERSION]
-ChangeSolverType "HF Frequency Domain"
-
-'@ define frequency domain solver parameters
-
-'[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Mesh.SetCreator "High Frequency" 
-With FDSolver
+With Brick
      .Reset 
-     .SetMethod "Tetrahedral", "General purpose" 
-     .OrderTet "Second" 
-     .OrderSrf "First" 
-     .Stimulation "1", "1" 
-     .ResetExcitationList 
-     .AutoNormImpedance "False" 
-     .NormingImpedance "50" 
-     .ModesOnly "False" 
-     .ConsiderPortLossesTet "True" 
-     .SetShieldAllPorts "False" 
-     .AccuracyHex "1e-6" 
-     .AccuracyTet "1e-4" 
-     .AccuracySrf "1e-3" 
-     .LimitIterations "False" 
-     .MaxIterations "0" 
-     .SetCalculateExcitationsInParallel "True", "False", "" 
-     .StoreAllResults "False" 
-     .StoreResultsInCache "False" 
-     .UseHelmholtzEquation "True" 
-     .LowFrequencyStabilization "True" 
-     .Type "Auto" 
-     .MeshAdaptionHex "False" 
-     .MeshAdaptionTet "True" 
-     .AcceleratedRestart "True" 
-     .FreqDistAdaptMode "Distributed" 
-     .NewIterativeSolver "True" 
-     .TDCompatibleMaterials "False" 
-     .ExtrudeOpenBC "True" 
-     .SetOpenBCTypeHex "Default" 
-     .SetOpenBCTypeTet "Default" 
-     .AddMonitorSamples "True" 
-     .CalcStatBField "False" 
-     .CalcPowerLoss "True" 
-     .CalcPowerLossPerComponent "False" 
-     .StoreSolutionCoefficients "True" 
-     .UseDoublePrecision "False" 
-     .UseDoublePrecision_ML "True" 
-     .MixedOrderSrf "False" 
-     .MixedOrderTet "False" 
-     .PreconditionerAccuracyIntEq "0.15" 
-     .MLFMMAccuracy "Default" 
-     .MinMLFMMBoxSize "0.20" 
-     .UseCFIEForCPECIntEq "true" 
-     .UseFastRCSSweepIntEq "false" 
-     .UseSensitivityAnalysis "False" 
-     .SweepErrorThreshold "True", "0.01" 
-     .SweepErrorChecks "2" 
-     .SweepMinimumSamples "3" 
-     .SweepConsiderAll "True" 
-     .SweepConsiderReset 
-     .SetNumberOfResultDataSamples "1001" 
-     .SweepWeightEvanescent "1.0" 
-     .AccuracyROM "1e-4" 
-     .AddSampleInterval "", "", "1", "Automatic", "True" 
-     .AddSampleInterval "", "", "", "Automatic", "False" 
-     .MPIParallelization "False"
-     .UseDistributedComputing "False"
-     .NetworkComputingStrategy "RunRemote"
-     .NetworkComputingJobCount "3"
-     .LimitCPUs "True"
-     .MaxCPUs "48"
+     .Name "solid3" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "5.3", "6.2" 
+     .Yrange "0.3", "2.1" 
+     .Zrange "0", "0.95" 
+     .Create
 End With
-With IESolver
+
+
+'@ define brick: component1:solid4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
      .Reset 
-     .UseFastFrequencySweep "True" 
-     .UseIEGroundPlane "False" 
-     .SetRealGroundMaterialName "" 
-     .PreconditionerType "Auto" 
-End With
-With IESolver
-     .SetFMMFFCalcStopLevel "0" 
-     .SetFMMFFCalcNumInterpPoints "6" 
-     .UseFMMFarfieldCalc "True" 
-     .SetCFIEAlpha "0.500000" 
-     .LowFrequencyStabilization "False" 
-     .LowFrequencyStabilizationML "True" 
-     .Multilayer "False" 
-     .SetiMoMACC_I "0.0001" 
-     .SetiMoMACC_M "0.0001" 
-     .DeembedExternalPorts "True" 
-     .SetOpenBC_XY "True" 
-     .OldRCSSweepDefintion "False" 
-     .SetAccuracySetting "Custom" 
-     .CalculateSParaforFieldsources "True" 
+     .Name "solid4" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "2*x+(x-m)/2", "2*x+(x-m)/2+m" 
+     .Yrange "(x-m)/2", "(x-m)/2+m" 
+     .Zrange "0", "n" 
+     .Create
 End With
 
-'@ delete monitors
+
+'@ delete shape: component1:solid3
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Monitor.Delete "farfield (f=50)" 
-Monitor.Delete "farfield (f=60)" 
-Monitor.Delete "farfield (f=70)"
+Solid.Delete "component1:solid3" 
 
-'@ delete monitors
 
-'[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Monitor.Delete "power (f=50)" 
-Monitor.Delete "power (f=60)" 
-Monitor.Delete "power (f=70)"
-
-'@ delete monitors
+'@ boolean subtract shapes: component1:solid2, component1:solid4
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Monitor.Delete "loss (f=50)" 
-Monitor.Delete "loss (f=60)" 
-Monitor.Delete "loss (f=70)"
+Solid.Subtract "component1:solid2", "component1:solid4" 
 
-'@ delete monitors
+'@ define brick: component1:solid3
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Monitor.Delete "e-field (f=50)" 
-Monitor.Delete "e-field (f=60)" 
-Monitor.Delete "e-field (f=70)" 
-Monitor.Delete "h-field (f=50)" 
-Monitor.Delete "h-field (f=60)" 
-Monitor.Delete "h-field (f=70)"
-
-'@ set parametersweep options
-
-'[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With ParameterSweep
-    .SetSimulationType "Frequency" 
+With Brick
+     .Reset 
+     .Name "solid3" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "2*x+ab", "2*x+ab+m" 
+     .Yrange "ab", "ab+m" 
+     .Zrange "r2-n", "r2" 
+     .Create
 End With
 
-'@ edit parsweep parameter: Sequence 2:length
+
+'@ boolean subtract shapes: component1:solid2, component1:solid3
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With ParameterSweep
-     .DeleteParameter "Sequence 2", "length" 
-     .AddParameter_Samples "Sequence 2", "length", "2", "6", "3", "False" 
-End With
+Solid.Subtract "component1:solid2", "component1:solid3" 
 
-'@ enable parsweep sequence: Sequence 1
-
-'[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With ParameterSweep
-     .EnableSequence "Sequence 1", "False" 
-End With
-
-'@ delete parsweep sequence: Sequence 2
-
-'[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With ParameterSweep
-     .DeleteSequence "Sequence 2" 
-End With
-
-'@ delete parsweep sequence: Sequence 1
-
-'[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With ParameterSweep
-     .DeleteSequence "Sequence 1" 
-End With
-
-'@ add parsweep sequence: Sequence 1
-
-'[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With ParameterSweep
-     .AddSequence "Sequence 1" 
-End With
-
-'@ add parsweep parameter: Sequence 1:length
-
-'[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With ParameterSweep
-     .AddParameter_Samples "Sequence 1", "length", "2", "5", "3", "False" 
-End With
-
-'@ edit parsweep parameter: Sequence 1:length
-
-'[VERSION]2015.0|24.0.2|20150116[/VERSION]
-With ParameterSweep
-     .DeleteParameter "Sequence 1", "length" 
-     .AddParameter_Stepwidth "Sequence 1", "length", "2", "12", "1" 
-End With
-
-'@ transform: mirror component1
+'@ transform: translate component1:solid1
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With Transform 
      .Reset 
-     .Name "component1" 
-     .Origin "Free" 
-     .Center "0", "0", "0" 
-     .PlaneNormal "2.5", "0", "0" 
+     .Name "component1:solid1" 
+     .Vector "-5", "0", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
      .MultipleObjects "True" 
      .GroupObjects "False" 
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Destination "" 
      .Material "" 
-     .Transform "Shape", "Mirror" 
+     .Transform "Shape", "Translate" 
 End With 
 
 
-'@ transform: mirror component1:withAR
+'@ transform: translate component1:solid2
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With Transform 
      .Reset 
-     .Name "component1:withAR" 
-     .Origin "Free" 
-     .Center "10", "0", "0" 
-     .PlaneNormal "10", "0", "0" 
+     .Name "component1:solid2" 
+     .Vector "-10", "0", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
      .MultipleObjects "True" 
      .GroupObjects "False" 
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Destination "" 
      .Material "" 
-     .Transform "Shape", "Mirror" 
+     .Transform "Shape", "Translate" 
 End With 
 
 
-'@ transform: mirror component1:withAR
+'@ transform: translate component1:solid1
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With Transform 
      .Reset 
-     .Name "component1:withAR" 
-     .Origin "Free" 
-     .Center "5", "0", "0" 
-     .PlaneNormal "10", "0", "0" 
+     .Name "component1:solid1" 
+     .Vector "-2.5", "-2.5", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
      .MultipleObjects "True" 
      .GroupObjects "False" 
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Destination "" 
      .Material "" 
-     .Transform "Shape", "Mirror" 
+     .Transform "Shape", "Translate" 
 End With 
 
 
-'@ transform: mirror component1:withAR
+'@ transform: translate component1:solid1_1
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With Transform 
      .Reset 
-     .Name "component1:withAR" 
-     .Origin "Free" 
-     .Center "2.5", "0", "0" 
-     .PlaneNormal "5", "0", "0" 
+     .Name "component1:solid1_1" 
+     .Vector "2.5", "2.5", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
      .MultipleObjects "True" 
      .GroupObjects "False" 
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Destination "" 
      .Material "" 
-     .Transform "Shape", "Mirror" 
+     .Transform "Shape", "Translate" 
 End With 
 
 
-'@ transform: mirror component1:withAR
+'@ transform: translate component1:solid2
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With Transform 
      .Reset 
-     .Name "component1:withAR" 
-     .Origin "Free" 
-     .Center "7.5", "0", "0" 
-     .PlaneNormal "10", "0", "0" 
+     .Name "component1:solid2" 
+     .Vector "-5", "5", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
      .MultipleObjects "True" 
      .GroupObjects "False" 
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Destination "" 
      .Material "" 
-     .Transform "Shape", "Mirror" 
+     .Transform "Shape", "Translate" 
 End With 
 
 
-'@ transform: mirror component1:withAR_3
+'@ transform: translate component1:solid2
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With Transform 
      .Reset 
-     .Name "component1:withAR_3" 
-     .Origin "Free" 
-     .Center "2.5", "0", "0" 
-     .PlaneNormal "5", "0", "0" 
+     .Name "component1:solid2" 
+     .Vector "-5", "-5", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
      .MultipleObjects "True" 
      .GroupObjects "False" 
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Destination "" 
      .Material "" 
-     .Transform "Shape", "Mirror" 
+     .Transform "Shape", "Translate" 
 End With 
 
 
-'@ transform: mirror component1:withAR_3
+'@ define brick: component1:solid3
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid3" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "x", "2*x" 
+     .Yrange "x", "x*2" 
+     .Zrange "0", "r3" 
+     .Create
+End With
+
+
+'@ define brick: component1:solid4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid4" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "x+ab", "x+ab+m" 
+     .Yrange "x+ab", "x+ab+m" 
+     .Zrange "0", "n" 
+     .Create
+End With
+
+
+'@ boolean subtract shapes: component1:solid3, component1:solid4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Solid.Subtract "component1:solid3", "component1:solid4" 
+
+'@ define brick: component1:solid4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid4" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "x+ab", "x+ab+m" 
+     .Yrange "x+ab", "x+ab+m" 
+     .Zrange "r3-n", "r3" 
+     .Create
+End With
+
+
+'@ boolean subtract shapes: component1:solid3, component1:solid4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Solid.Subtract "component1:solid3", "component1:solid4" 
+
+'@ transform: translate component1:solid3
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With Transform 
      .Reset 
-     .Name "component1:withAR_3" 
-     .Origin "Free" 
-     .Center "7.5", "0", "0" 
-     .PlaneNormal "10", "0", "0" 
+     .Name "component1:solid3" 
+     .Vector "0", "-5", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
      .MultipleObjects "True" 
      .GroupObjects "False" 
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Destination "" 
      .Material "" 
-     .Transform "Shape", "Mirror" 
+     .Transform "Shape", "Translate" 
 End With 
 
 
-'@ transform: mirror component1:withAR_3
+'@ transform: translate component1:solid3
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With Transform 
      .Reset 
-     .Name "component1:withAR_3" 
-     .Origin "Free" 
-     .Center "10", "0", "0" 
-     .PlaneNormal "5", "0", "0" 
+     .Name "component1:solid3" 
+     .Vector "-5", "0", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
      .MultipleObjects "True" 
      .GroupObjects "False" 
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Destination "" 
      .Material "" 
-     .Transform "Shape", "Mirror" 
+     .Transform "Shape", "Translate" 
 End With 
 
 
-'@ transform: mirror component1:withAR_3
+'@ transform: translate component1:solid3
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With Transform 
      .Reset 
-     .Name "component1:withAR_3" 
-     .Origin "Free" 
-     .Center "15", "0", "0" 
-     .PlaneNormal "5", "0", "0" 
+     .Name "component1:solid3" 
+     .Vector "-5", "-5", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
      .MultipleObjects "True" 
      .GroupObjects "False" 
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Destination "" 
      .Material "" 
-     .Transform "Shape", "Mirror" 
+     .Transform "Shape", "Translate" 
 End With 
 
 
-'@ transform: mirror component1:withAR_3
+'@ define brick: component1:solid4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid4" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "2*x", "3*x" 
+     .Yrange "x", "2*x" 
+     .Zrange "0", "r4" 
+     .Create
+End With
+
+
+'@ define brick: component1:solid5
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid5" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "2*x+ab", "2*x+ab+m" 
+     .Yrange "x+ab", "x+ab+m" 
+     .Zrange "0", "n" 
+     .Create
+End With
+
+
+'@ boolean subtract shapes: component1:solid4, component1:solid5
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Solid.Subtract "component1:solid4", "component1:solid5" 
+
+'@ define brick: component1:solid5
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid5" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "2*x+ab", "2*x+ab+m" 
+     .Yrange "x+ab", "x+ab+m" 
+     .Zrange "r4-n", "r4" 
+     .Create
+End With
+
+
+'@ boolean subtract shapes: component1:solid4, component1:solid5
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Solid.Subtract "component1:solid4", "component1:solid5" 
+
+'@ transform: translate component1:solid4
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With Transform 
      .Reset 
-     .Name "component1:withAR_3" 
-     .Origin "Free" 
-     .Center "12.5", "0", "0" 
-     .PlaneNormal "5", "0", "0" 
+     .Name "component1:solid4" 
+     .Vector "0", "-5", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
      .MultipleObjects "True" 
      .GroupObjects "False" 
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Destination "" 
      .Material "" 
-     .Transform "Shape", "Mirror" 
+     .Transform "Shape", "Translate" 
 End With 
 
 
-'@ transform: mirror component1
+'@ transform: translate component1:solid4
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 With Transform 
      .Reset 
-     .Name "component1" 
-     .Origin "Free" 
-     .Center "22.5", "0", "0" 
-     .PlaneNormal "5", "0", "0" 
+     .Name "component1:solid4" 
+     .Vector "-10", "0", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
      .MultipleObjects "True" 
      .GroupObjects "False" 
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Destination "" 
      .Material "" 
-     .Transform "Shape", "Mirror" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ transform: translate component1:solid4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid4" 
+     .Vector "-10", "-5", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ transform: translate component1:solid4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid4" 
+     .Vector "-2.5", "2.6", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ transform: translate component1:solid4_4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid4_4" 
+     .Vector "-5", "0", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ delete shape: component1:solid4_4_1
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Solid.Delete "component1:solid4_4_1" 
+
+
+'@ delete shape: component1:solid4_4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Solid.Delete "component1:solid4_4" 
+
+
+'@ transform: translate component1:solid4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid4" 
+     .Vector "-2.5", "2.5", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ transform: translate component1:solid4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid4" 
+     .Vector "-7.5", "2.5", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ transform: translate component1:solid4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid4" 
+     .Vector "-2.5", "-7.5", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ transform: translate component1:solid4
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid4" 
+     .Vector "-7.5", "-7.5", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ define brick: component1:solid5
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid5" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "2*x", "3*x" 
+     .Yrange "2*x", "3*x" 
+     .Zrange "0", "r5" 
+     .Create
+End With
+
+
+'@ define brick: component1:solid6
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid6" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "2*x+ab", "2*x+ab+m" 
+     .Yrange "2*x+ab", "2*x+ab+m" 
+     .Zrange "0", "n" 
+     .Create
+End With
+
+
+'@ boolean subtract shapes: component1:solid5, component1:solid6
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Solid.Subtract "component1:solid5", "component1:solid6" 
+
+'@ define brick: component1:solid6
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid6" 
+     .Component "component1" 
+     .Material "material1" 
+     .Xrange "2*x+ab", "2*x+ab+m" 
+     .Yrange "2*x+ab", "2*x+ab+m" 
+     .Zrange "r5-n", "r5" 
+     .Create
+End With
+
+
+'@ boolean subtract shapes: component1:solid5, component1:solid6
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Solid.Subtract "component1:solid5", "component1:solid6" 
+
+'@ transform: translate component1:solid5
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid5" 
+     .Vector "-10", "0", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ transform: translate component1:solid5
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid5" 
+     .Vector "10", "0", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ transform: translate component1:solid5
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid5" 
+     .Vector "0", "-10", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ transform: translate component1:solid5
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid5" 
+     .Vector "10", "0", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ transform: translate component1:solid5
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid5" 
+     .Vector "0", "10", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Translate" 
 End With 
 
 

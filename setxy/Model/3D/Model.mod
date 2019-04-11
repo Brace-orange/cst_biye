@@ -304,11 +304,12 @@ With Brick
      .Name "hole" 
      .Component "component1" 
      .Material "hole" 
-     .Xrange "0.3", "2.1" 
-     .Yrange "0.3", "2.1" 
+     .Xrange "0.3", "2.2" 
+     .Yrange "0.3", "2.2" 
      .Zrange "0", "0.95" 
      .Create
 End With
+
 
 '@ transform: translate component1:hole
 
@@ -341,11 +342,12 @@ With Brick
      .Name "solid1" 
      .Component "component1" 
      .Material "hole" 
-     .Xrange "0.3", "2.1" 
-     .Yrange "0.3", "2.1" 
+     .Xrange "0.3", "2.2" 
+     .Yrange "0.3", "2.2" 
      .Zrange "length-0.95", "length" 
      .Create
 End With
+
 
 '@ pick face
 

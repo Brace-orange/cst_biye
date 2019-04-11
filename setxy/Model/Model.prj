@@ -3,7 +3,7 @@
 [Author]
 Administrator
 [Mesh Cells]
-5,827
+5,867
 [Mesh Type]
 Tetrahedral
 [Last Problem Type]
@@ -13,7 +13,7 @@ HF Frequency Domain
 [Last Solver Type Abb]
 f
 [Results]
-Unavailable
+Frequency Domain: S-Parameter
 [Modeler Unique ID]
-5:withar - ¸±±¾.cst?e41b64edc5b02e308459acf83d822a0e?23292:numberofparameters=1:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::length
+5:setxy.cst?a58df2b6fb64f9a4ccaca028316e701a?23292:numberofparameters=1:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::length
 [Comment]

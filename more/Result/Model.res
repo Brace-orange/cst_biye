@@ -59,7 +59,7 @@ signal_default_lf.sig
 
 Time / ns
 Excitation: default
-High Frequency:0:2
+High Frequency:0:0
 visible
 internal
 persistent

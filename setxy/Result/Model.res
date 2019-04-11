@@ -493,19 +493,6 @@ result
 P
 XYSIGNAL2
 complex
-1D Results\Power\Excitation [1]\Power Accepted
-AcceptedPower_1.sig
-W
-Frequency / GHz
-Power in Watt
-:8:1000
-visible
-internal
-surviveparchange
-result
-P
-XYSIGNAL2
-complex
 1D Results\Power\Excitation [1]\Power Accepted per Port\Port 2
 AcceptedPower_2(1).sig
 W
@@ -532,8 +519,21 @@ result
 P
 XYSIGNAL2
 complex
-1D Results\Power\Excitation [1]\Loss per Material\Volume loss in material1
-cVolume_loss_in_material1(1).sig
+1D Results\Power\Excitation [1]\Power Outgoing all Ports
+ReflectedPower_1.sig
+W
+Frequency / GHz
+Power in Watt
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+complex
+1D Results\Power\Excitation [1]\Power Accepted
+AcceptedPower_1.sig
 W
 Frequency / GHz
 Power in Watt
@@ -558,6 +558,19 @@ result
 P
 XYSIGNAL2
 complex
+1D Results\Power\Excitation [1]\Loss in Dielectrics
+cTotal_loss_in_dielectrics(1).sig
+W
+Frequency / GHz
+Power in Watt
+:8:1000
+visible
+internal
+surviveparchange
+result
+P
+XYSIGNAL2
+complex
 1D Results\Power\Excitation [1]\Loss in Metals
 cTotal_metal_loss(1).sig
 W
@@ -571,21 +584,8 @@ result
 P
 XYSIGNAL2
 complex
-1D Results\Power\Excitation [1]\Power Outgoing all Ports
-ReflectedPower_1.sig
-W
-Frequency / GHz
-Power in Watt
-:8:1000
-visible
-internal
-surviveparchange
-result
-P
-XYSIGNAL2
-complex
-1D Results\Power\Excitation [1]\Loss in Dielectrics
-cTotal_loss_in_dielectrics(1).sig
+1D Results\Power\Excitation [1]\Loss per Material\Volume loss in material1
+cVolume_loss_in_material1(1).sig
 W
 Frequency / GHz
 Power in Watt
@@ -1028,8 +1028,8 @@ result
 0
 XYSIGNAL2
 complex
-1D Results\Power\Excitation [1]\Power Outgoing all Ports
-ReflectedPower_1.sig
+1D Results\Power\Excitation [1]\Power Accepted per Port\Port 2
+AcceptedPower_2(1).sig
 W
 Frequency / GHz
 Power in Watt
@@ -1054,8 +1054,8 @@ result
 0
 XYSIGNAL2
 complex
-1D Results\Power\Excitation [1]\Power Accepted per Port\Port 2
-AcceptedPower_2(1).sig
+1D Results\Power\Excitation [1]\Power Outgoing all Ports
+ReflectedPower_1.sig
 W
 Frequency / GHz
 Power in Watt
@@ -1093,6 +1093,19 @@ result
 0
 XYSIGNAL2
 complex
+1D Results\Power\Excitation [1]\Loss in Dielectrics
+cTotal_loss_in_dielectrics(1).sig
+W
+Frequency / GHz
+Power in Watt
+:8:1000
+visible
+internal
+rebuild
+result
+0
+XYSIGNAL2
+complex
 1D Results\Power\Excitation [1]\Loss in Metals
 cTotal_metal_loss(1).sig
 W
@@ -1108,19 +1121,6 @@ XYSIGNAL2
 complex
 1D Results\Power\Excitation [1]\Loss per Material\Volume loss in material1
 cVolume_loss_in_material1(1).sig
-W
-Frequency / GHz
-Power in Watt
-:8:1000
-visible
-internal
-rebuild
-result
-0
-XYSIGNAL2
-complex
-1D Results\Power\Excitation [1]\Loss in Dielectrics
-cTotal_loss_in_dielectrics(1).sig
 W
 Frequency / GHz
 Power in Watt
