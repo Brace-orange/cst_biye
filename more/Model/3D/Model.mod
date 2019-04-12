@@ -229,7 +229,6 @@ With Brick
      .Create
 End With
 
-
 '@ define material: hole
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
@@ -311,7 +310,6 @@ With Brick
      .Create
 End With
 
-
 '@ transform: translate component1:hole
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
@@ -348,7 +346,6 @@ With Brick
      .Zrange "0", "n" 
      .Create
 End With
-
 
 '@ pick face
 
@@ -730,7 +727,6 @@ End With
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
 Solid.Rename "component1:withAR", "center"
 
-
 '@ define brick: component1:solid1
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
@@ -744,7 +740,6 @@ With Brick
      .Zrange "0", "r1" 
      .Create
 End With
-
 
 '@ define brick: component1:solid2
 
@@ -760,11 +755,10 @@ With Brick
      .Create
 End With
 
-
 '@ boolean subtract shapes: component1:solid1, component1:solid2
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Subtract "component1:solid1", "component1:solid2" 
+Solid.Subtract "component1:solid1", "component1:solid2"
 
 '@ define brick: component1:solid2
 
@@ -780,11 +774,10 @@ With Brick
      .Create
 End With
 
-
 '@ boolean subtract shapes: component1:solid1, component1:solid2
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Subtract "component1:solid1", "component1:solid2" 
+Solid.Subtract "component1:solid1", "component1:solid2"
 
 '@ define brick: component1:solid2
 
@@ -800,7 +793,6 @@ With Brick
      .Create
 End With
 
-
 '@ define brick: component1:solid3
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
@@ -814,7 +806,6 @@ With Brick
      .Zrange "0", "0.95" 
      .Create
 End With
-
 
 '@ define brick: component1:solid4
 
@@ -830,17 +821,15 @@ With Brick
      .Create
 End With
 
-
 '@ delete shape: component1:solid3
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Delete "component1:solid3" 
-
+Solid.Delete "component1:solid3"
 
 '@ boolean subtract shapes: component1:solid2, component1:solid4
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Subtract "component1:solid2", "component1:solid4" 
+Solid.Subtract "component1:solid2", "component1:solid4"
 
 '@ define brick: component1:solid3
 
@@ -856,11 +845,10 @@ With Brick
      .Create
 End With
 
-
 '@ boolean subtract shapes: component1:solid2, component1:solid3
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Subtract "component1:solid2", "component1:solid3" 
+Solid.Subtract "component1:solid2", "component1:solid3"
 
 '@ transform: translate component1:solid1
 
@@ -878,8 +866,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid2
 
@@ -897,8 +884,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid1
 
@@ -916,8 +902,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid1_1
 
@@ -935,8 +920,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid2
 
@@ -954,8 +938,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid2
 
@@ -973,8 +956,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ define brick: component1:solid3
 
@@ -990,7 +972,6 @@ With Brick
      .Create
 End With
 
-
 '@ define brick: component1:solid4
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
@@ -1005,11 +986,10 @@ With Brick
      .Create
 End With
 
-
 '@ boolean subtract shapes: component1:solid3, component1:solid4
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Subtract "component1:solid3", "component1:solid4" 
+Solid.Subtract "component1:solid3", "component1:solid4"
 
 '@ define brick: component1:solid4
 
@@ -1025,11 +1005,10 @@ With Brick
      .Create
 End With
 
-
 '@ boolean subtract shapes: component1:solid3, component1:solid4
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Subtract "component1:solid3", "component1:solid4" 
+Solid.Subtract "component1:solid3", "component1:solid4"
 
 '@ transform: translate component1:solid3
 
@@ -1047,8 +1026,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid3
 
@@ -1066,8 +1044,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid3
 
@@ -1085,8 +1062,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ define brick: component1:solid4
 
@@ -1102,7 +1078,6 @@ With Brick
      .Create
 End With
 
-
 '@ define brick: component1:solid5
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
@@ -1117,11 +1092,10 @@ With Brick
      .Create
 End With
 
-
 '@ boolean subtract shapes: component1:solid4, component1:solid5
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Subtract "component1:solid4", "component1:solid5" 
+Solid.Subtract "component1:solid4", "component1:solid5"
 
 '@ define brick: component1:solid5
 
@@ -1137,11 +1111,10 @@ With Brick
      .Create
 End With
 
-
 '@ boolean subtract shapes: component1:solid4, component1:solid5
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Subtract "component1:solid4", "component1:solid5" 
+Solid.Subtract "component1:solid4", "component1:solid5"
 
 '@ transform: translate component1:solid4
 
@@ -1159,8 +1132,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid4
 
@@ -1178,8 +1150,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid4
 
@@ -1197,8 +1168,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid4
 
@@ -1216,8 +1186,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid4_4
 
@@ -1235,20 +1204,17 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ delete shape: component1:solid4_4_1
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Delete "component1:solid4_4_1" 
-
+Solid.Delete "component1:solid4_4_1"
 
 '@ delete shape: component1:solid4_4
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Delete "component1:solid4_4" 
-
+Solid.Delete "component1:solid4_4"
 
 '@ transform: translate component1:solid4
 
@@ -1266,8 +1232,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid4
 
@@ -1285,8 +1250,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid4
 
@@ -1304,8 +1268,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid4
 
@@ -1323,8 +1286,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ define brick: component1:solid5
 
@@ -1340,7 +1302,6 @@ With Brick
      .Create
 End With
 
-
 '@ define brick: component1:solid6
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
@@ -1355,11 +1316,10 @@ With Brick
      .Create
 End With
 
-
 '@ boolean subtract shapes: component1:solid5, component1:solid6
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Subtract "component1:solid5", "component1:solid6" 
+Solid.Subtract "component1:solid5", "component1:solid6"
 
 '@ define brick: component1:solid6
 
@@ -1375,11 +1335,10 @@ With Brick
      .Create
 End With
 
-
 '@ boolean subtract shapes: component1:solid5, component1:solid6
 
 '[VERSION]2015.0|24.0.2|20150116[/VERSION]
-Solid.Subtract "component1:solid5", "component1:solid6" 
+Solid.Subtract "component1:solid5", "component1:solid6"
 
 '@ transform: translate component1:solid5
 
@@ -1395,8 +1354,7 @@ With Transform
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid5
 
@@ -1414,8 +1372,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid5
 
@@ -1431,8 +1388,7 @@ With Transform
      .Repetitions "1" 
      .MultipleSelection "False" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid5
 
@@ -1450,8 +1406,7 @@ With Transform
      .Destination "" 
      .Material "" 
      .Transform "Shape", "Translate" 
-End With 
-
+End With
 
 '@ transform: translate component1:solid5
 
@@ -1470,5 +1425,4 @@ With Transform
      .Material "" 
      .Transform "Shape", "Translate" 
 End With 
-
 
