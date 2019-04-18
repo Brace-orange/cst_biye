@@ -384,3 +384,25 @@ Solver.FrequencyRange "50", "70"
      .Transparency "0" 
      .Create
 [ENDMATERIAL]
+[WAVEGUIDE: 1]
+     .Label "" 
+     .NumberOfModes "1" 
+     .AdjustPolarization "False" 
+     .PolarizationAngle "0" 
+     .ReferencePlaneDistance "0" 
+     .TextSize "50" 
+     .Coordinates "Free" 
+     .Orientation "zmax" 
+     .PortOnBound "False" 
+     .ClipPickedPortToBound "False" 
+     .Xrange "0", "3.7592" 
+     .Yrange "0", "1.8796" 
+     .Zrange "0", "0" 
+     .XrangeAdd "0.0", "0.0" 
+     .YrangeAdd "0.0", "0.0" 
+     .ZrangeAdd "0.0", "0.0" 
+     .SingleEnded "False" 
+     .ConsiderForStructureBoundary "False" 
+     .ReferenceWCS "1.8796", "0.9398", "0", "0", "0", "1", "0", "1", "0"
+(TRANSFORM) "1", "0", "0", "0", "1", "0", "0", "0", "1"| "-0.6296", "0.3102", "-8"(ENDTRANSFORM)
+[ENDWAVEGUIDE]

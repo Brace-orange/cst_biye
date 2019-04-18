@@ -1426,3 +1426,242 @@ With Transform
      .Transform "Shape", "Translate" 
 End With 
 
+'@ define brick: component1:11
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
+     .Reset 
+     .Name "11" 
+     .Component "component1" 
+     .Material "PEC" 
+     .Xrange "-0.6296", "3.1296" 
+     .Yrange "0.3102", "0.3102 " 
+     .Zrange "-5.25", "-8" 
+     .Create
+End With
+
+
+'@ transform: translate component1:11
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:11" 
+     .Vector "0", "1.8796", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ define brick: component1:solid6
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid6" 
+     .Component "component1" 
+     .Material "PEC" 
+     .Xrange "-0.6296", "-0.6296" 
+     .Yrange "0.3102", "0.3102 + 1.8796" 
+     .Zrange "-5.25", "-8" 
+     .Create
+End With
+
+
+'@ transform: translate component1:solid6
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Transform 
+     .Reset 
+     .Name "component1:solid6" 
+     .Vector "3.7592", "0", "0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "True" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .Destination "" 
+     .Material "" 
+     .Transform "Shape", "Translate" 
+End With 
+
+
+'@ boolean add shapes: component1:11, component1:11_1
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Solid.Add "component1:11", "component1:11_1" 
+
+
+'@ boolean add shapes: component1:11, component1:solid6
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Solid.Add "component1:11", "component1:solid6" 
+
+
+'@ boolean add shapes: component1:11, component1:solid6_1
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Solid.Add "component1:11", "component1:solid6_1" 
+
+
+'@ pick edge
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Pick.PickEdgeFromId "component1:11", "12", "12" 
+
+
+'@ pick edge
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Pick.PickEdgeFromId "component1:11", "1", "16" 
+
+
+'@ pick edge
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Pick.PickEdgeFromId "component1:11", "16", "16" 
+
+
+'@ pick edge
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Pick.PickEdgeFromId "component1:11", "5", "13" 
+
+
+'@ define port: 1
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+With Port 
+     .Reset 
+     .PortNumber "1" 
+     .Label "" 
+     .NumberOfModes "1" 
+     .AdjustPolarization "False" 
+     .PolarizationAngle "0.0" 
+     .ReferencePlaneDistance "0" 
+     .TextSize "50" 
+     .Coordinates "Picks" 
+     .Orientation "positive" 
+     .PortOnBound "False" 
+     .ClipPickedPortToBound "False" 
+     .Xrange "-0.6296", "3.1296" 
+     .Yrange "0.3102", "2.1898" 
+     .Zrange "-8", "-8" 
+     .XrangeAdd "0.0", "0.0" 
+     .YrangeAdd "0.0", "0.0" 
+     .ZrangeAdd "0.0", "0.0" 
+     .SingleEnded "False" 
+     .Create 
+End With 
+
+
+'@ change solver type
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+ChangeSolverType "HF Frequency Domain" 
+
+
+'@ define frequency domain solver parameters
+
+'[VERSION]2015.0|24.0.2|20150116[/VERSION]
+Mesh.SetCreator "High Frequency" 
+
+With FDSolver
+     .Reset 
+     .SetMethod "Tetrahedral", "General purpose" 
+     .OrderTet "Second" 
+     .OrderSrf "First" 
+     .Stimulation "1", "1" 
+     .ResetExcitationList 
+     .AutoNormImpedance "False" 
+     .NormingImpedance "50" 
+     .ModesOnly "False" 
+     .ConsiderPortLossesTet "True" 
+     .SetShieldAllPorts "False" 
+     .AccuracyHex "1e-6" 
+     .AccuracyTet "1e-4" 
+     .AccuracySrf "1e-3" 
+     .LimitIterations "False" 
+     .MaxIterations "0" 
+     .SetCalculateExcitationsInParallel "True", "False", "" 
+     .StoreAllResults "False" 
+     .StoreResultsInCache "False" 
+     .UseHelmholtzEquation "True" 
+     .LowFrequencyStabilization "True" 
+     .Type "Auto" 
+     .MeshAdaptionHex "False" 
+     .MeshAdaptionTet "True" 
+     .AcceleratedRestart "True" 
+     .FreqDistAdaptMode "Distributed" 
+     .NewIterativeSolver "True" 
+     .TDCompatibleMaterials "False" 
+     .ExtrudeOpenBC "True" 
+     .SetOpenBCTypeHex "Default" 
+     .SetOpenBCTypeTet "Default" 
+     .AddMonitorSamples "True" 
+     .CalcStatBField "False" 
+     .CalcPowerLoss "True" 
+     .CalcPowerLossPerComponent "False" 
+     .StoreSolutionCoefficients "True" 
+     .UseDoublePrecision "False" 
+     .UseDoublePrecision_ML "True" 
+     .MixedOrderSrf "False" 
+     .MixedOrderTet "False" 
+     .PreconditionerAccuracyIntEq "0.15" 
+     .MLFMMAccuracy "Default" 
+     .MinMLFMMBoxSize "0.20" 
+     .UseCFIEForCPECIntEq "true" 
+     .UseFastRCSSweepIntEq "false" 
+     .UseSensitivityAnalysis "False" 
+     .SweepErrorThreshold "True", "0.01" 
+     .SweepErrorChecks "2" 
+     .SweepMinimumSamples "3" 
+     .SweepConsiderAll "True" 
+     .SweepConsiderReset 
+     .SetNumberOfResultDataSamples "1001" 
+     .SweepWeightEvanescent "1.0" 
+     .AccuracyROM "1e-4" 
+     .AddSampleInterval "", "", "1", "Automatic", "True" 
+     .AddSampleInterval "", "", "", "Automatic", "False" 
+     .MPIParallelization "False"
+     .UseDistributedComputing "False"
+     .NetworkComputingStrategy "RunRemote"
+     .NetworkComputingJobCount "3"
+     .LimitCPUs "True"
+     .MaxCPUs "48"
+End With
+
+With IESolver
+     .Reset 
+     .UseFastFrequencySweep "True" 
+     .UseIEGroundPlane "False" 
+     .SetRealGroundMaterialName "" 
+     .PreconditionerType "Auto" 
+End With
+
+With IESolver
+     .SetFMMFFCalcStopLevel "0" 
+     .SetFMMFFCalcNumInterpPoints "6" 
+     .UseFMMFarfieldCalc "True" 
+     .SetCFIEAlpha "0.500000" 
+     .LowFrequencyStabilization "False" 
+     .LowFrequencyStabilizationML "True" 
+     .Multilayer "False" 
+     .SetiMoMACC_I "0.0001" 
+     .SetiMoMACC_M "0.0001" 
+     .DeembedExternalPorts "True" 
+     .SetOpenBC_XY "True" 
+     .OldRCSSweepDefintion "False" 
+     .SetAccuracySetting "Custom" 
+     .CalculateSParaforFieldsources "True" 
+End With
+
+
